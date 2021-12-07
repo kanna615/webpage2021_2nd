@@ -92,24 +92,24 @@ try{
 <?php 
 function Harvest_color(){
 
-    echo "<tr><td align="center"><?=htmlspecialchars({$row['member']})?></td>";
-    echo "<td align="center">"<?=htmlspecialchars({$row['work_time']})?></td>";
-    echo "<td align="center"><?=htmlspecialchars({$row['work']})?></td>";
+    echo "<tr><td align="center"><?=htmlspecialchars({$row}['member'])?></td>";
+    echo "<td align="center">"<?=htmlspecialchars({$row}['work_time'])?></td>";
+    echo "<td align="center"><?=htmlspecialchars({$row}['work'])?></td>";
     
     if($row['eff']>80 && $row['work']=="収穫"){
-        echo "<td align="center" bgcolor="#7cfc00"><b><?=htmlspecialchars({$row['eff']})?></b></td>";
+        echo "<td align="center" bgcolor="#7cfc00"><b><?=htmlspecialchars({$row}['eff'])?></b></td>";
     
     }elseif($row['eff']>50 && $row['work']=="収穫"){
     
-        echo "<td align="center" bgcolor="#00bfff"><b><?=htmlspecialchars({$row['eff']})?></b></td>";
+        echo "<td align="center" bgcolor="#00bfff"><b><?=htmlspecialchars({$row}['eff'])?></b></td>";
     
     }elseif($row['eff']>30 && $row['work']=="収穫"){
     
-        echo "<td align="center" bgcolor="#ffd700"><b><?=htmlspecialchars({$row['eff'])}?></b></td>";
+        echo "<td align="center" bgcolor="#ffd700"><b><?=htmlspecialchars({$row}['eff'])?></b></td>";
     
     }elseif($row['eff']<30 && $row['work']=="収穫" && $row['eff']!=""){
     
-        echo "<td align="center" bgcolor="#ff4500"><b><?=htmlspecialchars({$row['eff']})?></b></td>";
+        echo "<td align="center" bgcolor="#ff4500"><b><?=htmlspecialchars({$row}['eff'])?></b></td>";
     
     }else{
     
@@ -117,10 +117,10 @@ function Harvest_color(){
     
     }
     
-    echo "<td align="center"><?=htmlspecialchars({$row['bx']})?></td>";
-    echo "<td align="center"><?=htmlspecialchars({$row['rane']})?></td>";
-    echo "<td align="center"><?=htmlspecialchars({$row['d_ymd']})?></td>";
-    echo "<td align="center"><?=htmlspecialchars({$row['dt']})?></td>";
+    echo "<td align="center"><?=htmlspecialchars({$row}['bx'])?></td>";
+    echo "<td align="center"><?=htmlspecialchars({$row}['rane'])?></td>";
+    echo "<td align="center"><?=htmlspecialchars({$row}['d_ymd'])?></td>";
+    echo "<td align="center"><?=htmlspecialchars({$row}['dt'])?></td>";
     echo "</tr>";
 
 
