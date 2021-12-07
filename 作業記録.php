@@ -92,68 +92,35 @@ try{
 <?php 
 function Harvest_color(){
 
-    echo "<tr>";
-    echo "<td align="center">";
-    echo "<?=htmlspecialchars({$row['member']})?>";
-    echo "</td>";
-    echo "<td align="center">";
-    echo "<?=htmlspecialchars({$row['work_time']})?>";
-    echo "</td>";
-    echo "<td align="center">";
-    echo "<?=htmlspecialchars({$row['work']})?>";
-    echo "</td>";
+    echo "<tr><td align="center"><?=htmlspecialchars({$row['member']})?></td>";
+    echo "<td align="center">"<?=htmlspecialchars({$row['work_time']})?></td>";
+    echo "<td align="center"><?=htmlspecialchars({$row['work']})?></td>";
     
     if($row['eff']>80 && $row['work']=="収穫"){
-        echo '<td align="center" bgcolor="#7cfc00">';
-        echo "<b>";
-        echo "<?=htmlspecialchars({$row['eff']})?>";
-        echo "</b>";
-        echo "</td>";
+        echo "<td align="center" bgcolor="#7cfc00"><b><?=htmlspecialchars({$row['eff']})?></b></td>";
     
     }elseif($row['eff']>50 && $row['work']=="収穫"){
     
-        echo '<td align="center" bgcolor="#00bfff">';
-        echo "<b>";
-        echo "<?=htmlspecialchars({$row['eff']})?>";
-        echo "</b>";
-        echo "</td>";
+        echo "<td align="center" bgcolor="#00bfff"><b><?=htmlspecialchars({$row['eff']})?></b></td>";
     
     }elseif($row['eff']>30 && $row['work']=="収穫"){
     
-        echo '<td align="center" bgcolor="#ffd700">';
-        echo "<b>";
-        echo "<?=htmlspecialchars({$row['eff'])}?>";
-        echo "</b>";
-        echo "</td>";
+        echo "<td align="center" bgcolor="#ffd700"><b><?=htmlspecialchars({$row['eff'])}?></b></td>";
     
     }elseif($row['eff']<30 && $row['work']=="収穫" && $row['eff']!=""){
     
-        echo '<td align="center" bgcolor="#ff4500">';
-        echo "<b>";
-        echo "<?=htmlspecialchars({$row['eff']})?>";
-        echo "</b>";
-        echo "</td>";
+        echo "<td align="center" bgcolor="#ff4500"><b><?=htmlspecialchars({$row['eff']})?></b></td>";
     
     }else{
     
-        echo '<td align="center">';
-        echo "<?=htmlspecialchars({$row['eff']})?>";
-        echo "</td>";
+        echo "<td align="center"><?=htmlspecialchars({$row['eff']})?></td>";
     
     }
     
-    echo '<td align="center">';
-    echo "<?=htmlspecialchars({$row['bx']})?>";
-    echo "</td>";
-    echo '<td align="center">';
-    echo "<?=htmlspecialchars({$row['rane']})?>";
-    echo "</td>";
-    echo '<td align="center">';
-    echo "<?=htmlspecialchars({$row['d_ymd']})?>";
-    echo "</td>";
-    echo '<td align="center">';
-    echo "<?=htmlspecialchars({$row['dt']})?>";
-    echo "</td>";
+    echo "<td align="center"><?=htmlspecialchars({$row['bx']})?></td>";
+    echo "<td align="center"><?=htmlspecialchars({$row['rane']})?></td>";
+    echo "<td align="center"><?=htmlspecialchars({$row['d_ymd']})?></td>";
+    echo "<td align="center"><?=htmlspecialchars({$row['dt']})?></td>";
     echo "</tr>";
 
 
