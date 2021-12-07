@@ -92,38 +92,39 @@ try{
 <?php 
 function Harvest_color(){
 ?>
-    あ<br>
-    <tr>
-    <td align="center"><?=htmlspecialchars($row['member'])?></td>
-    <td align="center"><?=htmlspecialchars($row['work_time'])?></td>
-    <td align="center"><?=htmlspecialchars($row['work'])?></td>
-    <?php
-    if($row['eff']>80 && $row['work']=="収穫"){?>
-        <td align="center" bgcolor="#7cfc00"><b><?=htmlspecialchars($row['eff'])?></b></td>
-    <?php
-    }elseif($row['eff']>50 && $row['work']=="収穫"){
-    ?>
-        <td align="center" bgcolor="#00bfff"><b><?=htmlspecialchars($row['eff'])?></b></td>
-    <?php
-    }elseif($row['eff']>30 && $row['work']=="収穫"){
-    ?>
-        <td align="center" bgcolor="#ffd700"><b><?=htmlspecialchars($row['eff'])?></b></td>
-    <?php
-    }elseif($row['eff']<30 && $row['work']=="収穫" && $row['eff']!=""){
-    ?>
-        <td align="center" bgcolor="#ff4500"><b><?=htmlspecialchars($row['eff'])?></b></td>
-    <?php
-    }else{
-    ?>
-        <td align="center"><?=htmlspecialchars($row['eff'])?></td>
-    <?php
-    }
-    ?>
-    <td align="center"><?=htmlspecialchars($row['bx'])?></td>
-    <td align="center"><?=htmlspecialchars($row['rane'])?></td>
-    <td align="center"><?=htmlspecialchars($row['d_ymd'])?></td>
-    <td align="center"><?=htmlspecialchars($row['dt'])?></td>
-    </tr>
+
+<tr>
+<td align="center"><?=htmlspecialchars($row['member'])?></td>
+<td align="center"><?=htmlspecialchars($row['work_time'])?></td>
+<td align="center"><?=htmlspecialchars($row['work'])?></td>
+<?php
+if($row['eff']>80 && $row['work']=="収穫"){?>
+    <td align="center" bgcolor="#7cfc00"><b><?=htmlspecialchars($row['eff'])?></b></td>
+<?php
+}elseif($row['eff']>50 && $row['work']=="収穫"){
+?>
+    <td align="center" bgcolor="#00bfff"><b><?=htmlspecialchars($row['eff'])?></b></td>
+<?php
+}elseif($row['eff']>30 && $row['work']=="収穫"){
+?>
+    <td align="center" bgcolor="#ffd700"><b><?=htmlspecialchars($row['eff'])?></b></td>
+<?php
+}elseif($row['eff']<30 && $row['work']=="収穫" && $row['eff']!=""){
+?>
+    <td align="center" bgcolor="#ff4500"><b><?=htmlspecialchars($row['eff'])?></b></td>
+<?php
+}else{
+?>
+    <td align="center"><?=htmlspecialchars($row['eff'])?></td>
+<?php
+}
+?>
+<td align="center"><?=htmlspecialchars($row['bx'])?></td>
+<td align="center"><?=htmlspecialchars($row['rane'])?></td>
+<td align="center"><?=htmlspecialchars($row['d_ymd'])?></td>
+<td align="center"><?=htmlspecialchars($row['dt'])?></td>
+</tr>
+
 <?php
 }
 ?>
