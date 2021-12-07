@@ -93,9 +93,15 @@ try{
 function Harvest_color(){
 
     echo "<tr>";
-    echo "<td align="center"><?=htmlspecialchars({$row}['member'])?></td>";
-    echo "<td align="center"><?=htmlspecialchars({$row}['work_time'])?></td>";
-    echo "<td align="center"><?=htmlspecialchars({$row}['work'])?></td>";
+    echo "<td align="center">";
+    echo "<?=htmlspecialchars({$row}['member'])?>";
+    echo "</td>";
+    echo "<td align="center">";
+    echo "<?=htmlspecialchars({$row}['work_time'])?>";
+    echo "</td>";
+    echo "<td align="center">";
+    echo "<?=htmlspecialchars({$row}['work'])?>";
+    echo "</td>";
     
     if($row['eff']>80 && $row['work']=="収穫"){
         echo '<td align="center" bgcolor="#7cfc00">';
