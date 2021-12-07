@@ -259,7 +259,7 @@ var myChart2 = new Chart(work_time2, {
 }else{
   print "パスワードが間違っているか、入力されていません。<br>";
 ?>
-  <a href="ログイン画面(作業記録).html">ログインページへ。</a><br>
+  <a href="ログイン画面_作業記録.html">ログインページへ。</a><br>
 <?php
 }
 ?>  
