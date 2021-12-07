@@ -90,38 +90,39 @@ try{
 ?>
 
 <?php 
-function Harvest_color(row_){
+function Harvest_color(){
 ?>
+    あ<br>
     <tr>
-    <td align="center"><?=htmlspecialchars($row_['member'])?></td>
-    <td align="center"><?=htmlspecialchars($row_['work_time'])?></td>
-    <td align="center"><?=htmlspecialchars($row_['work'])?></td>
+    <td align="center"><?=htmlspecialchars($row['member'])?></td>
+    <td align="center"><?=htmlspecialchars($row['work_time'])?></td>
+    <td align="center"><?=htmlspecialchars($row['work'])?></td>
     <?php
-    if($row_['eff']>80 && $row_['work']=="収穫"){?>
-        <td align="center" bgcolor="#7cfc00"><b><?=htmlspecialchars($row_['eff'])?></b></td>
+    if($row['eff']>80 && $row['work']=="収穫"){?>
+        <td align="center" bgcolor="#7cfc00"><b><?=htmlspecialchars($row['eff'])?></b></td>
     <?php
-    }elseif($row_['eff']>50 && $row_['work']=="収穫"){
+    }elseif($row['eff']>50 && $row['work']=="収穫"){
     ?>
-        <td align="center" bgcolor="#00bfff"><b><?=htmlspecialchars($row_['eff'])?></b></td>
+        <td align="center" bgcolor="#00bfff"><b><?=htmlspecialchars($row['eff'])?></b></td>
     <?php
-    }elseif($row_['eff']>30 && $row_['work']=="収穫"){
+    }elseif($row['eff']>30 && $row['work']=="収穫"){
     ?>
-        <td align="center" bgcolor="#ffd700"><b><?=htmlspecialchars($row_['eff'])?></b></td>
+        <td align="center" bgcolor="#ffd700"><b><?=htmlspecialchars($row['eff'])?></b></td>
     <?php
-    }elseif($row_['eff']<30 && $row_['work']=="収穫" && $row_['eff']!=""){
+    }elseif($row['eff']<30 && $row['work']=="収穫" && $row['eff']!=""){
     ?>
-        <td align="center" bgcolor="#ff4500"><b><?=htmlspecialchars($row_['eff'])?></b></td>
+        <td align="center" bgcolor="#ff4500"><b><?=htmlspecialchars($row['eff'])?></b></td>
     <?php
     }else{
     ?>
-        <td align="center"><?=htmlspecialchars($row_['eff'])?></td>
+        <td align="center"><?=htmlspecialchars($row['eff'])?></td>
     <?php
     }
     ?>
-    <td align="center"><?=htmlspecialchars($row_['bx'])?></td>
-    <td align="center"><?=htmlspecialchars($row_['rane'])?></td>
-    <td align="center"><?=htmlspecialchars($row_['d_ymd'])?></td>
-    <td align="center"><?=htmlspecialchars($row_['dt'])?></td>
+    <td align="center"><?=htmlspecialchars($row['bx'])?></td>
+    <td align="center"><?=htmlspecialchars($row['rane'])?></td>
+    <td align="center"><?=htmlspecialchars($row['d_ymd'])?></td>
+    <td align="center"><?=htmlspecialchars($row['dt'])?></td>
     </tr>
 <?php
 }
@@ -250,7 +251,7 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
     foreach ( $rs as $row ) {
         if($work == ""){
             if($row['member']==$search_key){
-                Harvest_color($row);
+                Harvest_color();
     ?> 
                 
     
@@ -258,7 +259,7 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
             }    
         }else{
             if(($row['member']==$search_key) && ($row['work']==$work)){
-                Harvest_color($row);
+                Harvest_color();
             ?>
                 
             <?php
@@ -455,13 +456,13 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
     $rs = $stmh->fetchall ();
     foreach ( $rs as $row ) {
         if($work == ""){
-             Harvest_color($row);
+             Harvest_color();
     ?> 
                 
     <?php
         }else{
             if($row['work']==$work){
-                Harvest_color($row);
+                Harvest_color();
             ?>
                 
             <?php
