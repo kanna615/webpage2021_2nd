@@ -50,8 +50,8 @@ try{
     <?php
     }else{
     ?>
-        <a href="ログイン画面(作業記録).html"><font size="5">作業記録管理ページ</font></a><br><br>
-        <a href="ログイン画面(カード管理).html"><font size="5">カード管理ページ</font></a>
+        <a href="ログイン画面_作業記録.html"><font size="5">作業記録管理ページ</font></a><br><br>
+        <a href="ログイン画面_カード管理.html"><font size="5">カード管理ページ</font></a>
     <?php
     }
     ?>
