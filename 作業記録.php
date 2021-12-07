@@ -455,13 +455,13 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
     $rs = $stmh->fetchall ();
     foreach ( $rs as $row ) {
         if($work == ""){
-             Harvest_color(row);
+             Harvest_color($row);
     ?> 
                 
     <?php
         }else{
             if($row['work']==$work){
-                Harvest_color(row);
+                Harvest_color($row);
             ?>
                 
             <?php
