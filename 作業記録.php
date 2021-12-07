@@ -90,8 +90,8 @@ try{
 ?>
 
 <?php 
-function Harvest_color(){
-    echo $row['member'];
+function Harvest_color($row_){
+    echo $row_['member'];
     echo "<tr>";
     echo '<td align="center">';
     echo "<?=htmlspecialchars({$row}['member'])?>";
@@ -488,13 +488,13 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
     $rs = $stmh->fetchall ();
     foreach ( $rs as $row ) {
         if($work == ""){
-             Harvest_color();
+             Harvest_color($row);
     ?> 
                 
     <?php
         }else{
             if($row['work']==$work){
-                Harvest_color();
+                Harvest_color($row);
             ?>
                 
             <?php
