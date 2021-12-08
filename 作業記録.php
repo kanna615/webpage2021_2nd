@@ -684,7 +684,7 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
     <?php
     $rs = $stmh->fetchall ();
     foreach ( $rs as $row ) {
-        Harvest_color(row);
+        Harvest_color($row);
     ?>         
     
     <?php
