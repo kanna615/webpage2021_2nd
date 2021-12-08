@@ -90,36 +90,36 @@ try{
 ?>
 
 <?php 
-function Harvest_color(){
-    echo "<tr><td align='center'>{$row['member']}</td>";
-    echo "<td align='center'>{$row['work_time']}</td>";
-    echo "<td align='center'>{$row['work']}</td>";
+function Harvest_color($row_){
+    echo "<tr><td align='center'>{$row_['member']}</td>";
+    echo "<td align='center'>{$row_['work_time']}</td>";
+    echo "<td align='center'>{$row_['work']}</td>";
     
-    if($row['eff']>80 && $row['work']=="収穫"){
-        echo "<td align='center' bgcolor='#7cfc00'><b>{$row['eff']}</b></td>";
+    if($row_['eff']>80 && $row_['work']=="収穫"){
+        echo "<td align='center' bgcolor='#7cfc00'><b>{$row_['eff']}</b></td>";
     
-    }elseif($row['eff']>50 && $row['work']=="収穫"){
+    }elseif($row_['eff']>50 && $row_['work']=="収穫"){
     
-        echo "<td align='center' bgcolor='#00bfff'><b>{$row['eff']}</b></td>";
+        echo "<td align='center' bgcolor='#00bfff'><b>{$row_['eff']}</b></td>";
     
-    }elseif($row['eff']>30 && $row['work']=="収穫"){
+    }elseif($row_['eff']>30 && $row_['work']=="収穫"){
     
-        echo "<td align='center' bgcolor='#ffd700'><b>{$row['eff']}</b></td>";
+        echo "<td align='center' bgcolor='#ffd700'><b>{$row_['eff']}</b></td>";
     
-    }elseif($row['eff']<30 && $row['work']=="収穫" && $row['eff']!=""){
+    }elseif($row_['eff']<30 && $row_['work']=="収穫" && $row_['eff']!=""){
     
-        echo "<td align='center' bgcolor='#ff4500'><b>{$row['eff']}</b></td>";
+        echo "<td align='center' bgcolor='#ff4500'><b>{$row_['eff']}</b></td>";
     
     }else{
     
-        echo "<td align='center'>{$row['eff']}</td>";
+        echo "<td align='center'>{$row_['eff']}</td>";
     
     }
     
-    echo "<td align='center'>{$row['bx']}</td>";
-    echo "<td align='center'>{$row['rane']}</td>";
-    echo "<td align='center'>{$row['d_ymd']}</td>";
-    echo "<td align='center'>{$row['dt']}</td></tr>";
+    echo "<td align='center'>{$row_['bx']}</td>";
+    echo "<td align='center'>{$row_['rane']}</td>";
+    echo "<td align='center'>{$row_['d_ymd']}</td>";
+    echo "<td align='center'>{$row_['dt']}</td></tr>";
 
 }
 ?>
@@ -180,14 +180,14 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
     foreach ( $rs as $row ) {
         if($work == ""){
             if(($row['member']==$search_key) && ($row['dd']==$DAY)){
-                Harvest_color();
+                Harvest_color($row);
     ?> 
                 
     <?php
             }
         }else{
             if(($row['member']==$search_key) && ($row['work']==$work) && ($row['dd']==$DAY)){
-                Harvest_color();
+                Harvest_color($row);
     ?>
                              
             <?php
@@ -247,7 +247,7 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
     foreach ( $rs as $row ) {
         if($work == ""){
             if($row['member']==$search_key){
-                Harvest_color();
+                Harvest_color($row);
     ?> 
                 
     
@@ -255,7 +255,7 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
             }    
         }else{
             if(($row['member']==$search_key) && ($row['work']==$work)){
-                Harvest_color();
+                Harvest_color($row);
             ?>
                 
             <?php
@@ -317,14 +317,14 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
             if($work == ""){
                 if($row['member']==$search_key){
                     $GYOU += 1;
-                    Harvest_color();
+                    Harvest_color($row);
     ?> 
     
     <?php
                 }else{
                     if(($row['member']==$search_key) && ($row['work']==$work)){
                         $GYOU += 1;
-                        Harvest_color();
+                        Harvest_color($row);
                     ?>
                         
                     <?php
@@ -386,14 +386,14 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
     foreach ( $rs as $row ) {
         if($work == ""){
             if($row['dd']==$DAY){
-                Harvest_color();
+                Harvest_color($row);
     ?> 
                 
     <?php
             }
         }else{
             if(($row['dd']==$DAY) && ($row['work']==$work)){
-                Harvest_color();
+                Harvest_color($row);
             ?>
                 
             <?php
@@ -452,13 +452,13 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
     $rs = $stmh->fetchall ();
     foreach ( $rs as $row ) {
         if($work == ""){
-             Harvest_color();
+             Harvest_color($row);
     ?> 
                 
     <?php
         }else{
             if($row['work']==$work){
-                Harvest_color();
+                Harvest_color($row);
             ?>
                 
             <?php
@@ -518,13 +518,13 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
         foreach ( $rs as $row ) {
             $GYOU += 1;
             if($work == ""){
-                Harvest_color();
+                Harvest_color($row);
     ?> 
                     
     <?php
             }else{
                 if($row['work']==$work){
-                    Harvest_color();
+                    Harvest_color($row);
                 ?>
                     
                 <?php
@@ -647,7 +647,7 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
     <?php
     $rs = $stmh->fetchall ();
     foreach ( $rs as $row ) {
-        Harvest_color();
+        Harvest_color($row);
     ?>         
     
     <?php
