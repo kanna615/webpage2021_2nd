@@ -26,7 +26,7 @@ if(isset($_SESSION["pass"]) && $_SESSION["pass"]==$pass){
         
         <font size="4" color="#000000">作業内容を指定:</font><br>
         <select name="work">
-            <option value="" selected>----作業内容を選択してください----</option>
+            <option value="" selected>$_POST["work"]</option>
             <option value="収穫">収穫</option>
             <option value="芽かき">芽かき</option>
             <option value="追い巻き">追い巻き</option>
@@ -35,7 +35,7 @@ if(isset($_SESSION["pass"]) && $_SESSION["pass"]==$pass){
 
         <font size="4" color="#000000">日付で検索:</font><br>
         <select name="year">
-            <option value="" selected>----年を選択してください----</option>
+            <option value="" selected>$_POST["year"]</option>
             <?php
                 for($i=2021;$i<=2035;$i++){
                     echo"<option value='{$i}'>{$i}</option>";
@@ -44,7 +44,7 @@ if(isset($_SESSION["pass"]) && $_SESSION["pass"]==$pass){
         </select>
         年
         <select name="month">
-            <option value="" selected>----月を選択してください----</option>
+            <option value="" selected>$_POST["month"]</option>
             <?php
                 for($i=1;$i<=12;$i++){
                     echo"<option value='{$i}'>{$i}</option>";
@@ -53,7 +53,7 @@ if(isset($_SESSION["pass"]) && $_SESSION["pass"]==$pass){
         </select>
         月
         <select name="day">
-            <option value="" selected>----日を選択してください----</option>
+            <option value="" selected>$_POST["day"]</option>
             <?php
                 for($i=1;$i<=31;$i++){
                     echo"<option value='{$i}'>{$i}</option>";
@@ -681,7 +681,6 @@ print "年月または名前を指定してください。<br>";*/
 <?php
 }
 ?>
-
 
 </body>
 </html>
