@@ -35,7 +35,7 @@ if(isset($_SESSION["pass"]) && $_SESSION["pass"]==$pass){
 
         <font size="4" color="#000000">日付で検索:</font><br>
         <select name="year">
-            <option value=<?= $_POST["year"] ?> selected></option>
+            <option value=<?= $initial_year ?> selected></option>
             <?php
                 for($i=2021;$i<=2035;$i++){
                     echo"<option value='{$i}'>{$i}</option>";
