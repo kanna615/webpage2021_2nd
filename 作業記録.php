@@ -44,7 +44,7 @@ if(isset($_SESSION["pass"]) && $_SESSION["pass"]==$pass){
         </select>
         年
         <select name="month">
-            <option value=<?= $KEY32 ?> selected></option>
+            <option value=$KEY32 selected></option>
             <?php
                 for($i=1;$i<=12;$i++){
                     echo"<option value='{$i}'>{$i}</option>";
