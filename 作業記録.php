@@ -23,9 +23,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $set_month = $_POST['month'];
         $set_day = $_POST['day'];
     }
+    if ($_POST['search_key'] == '' && $_POST['work'] == '' && $_POST['year'] == '' && $_POST['month'] == '' && $_POST['day'] == ''){
+        $set_name = '';
+        $set_work = '';
+        $set_year = date('Y');
+        $set_month = date('n');
+        $set_day = '';
+    }
 } 
 else {
-    echo'a';
     $set_name = '';
     $set_work = '';
     $set_year = date('Y');
