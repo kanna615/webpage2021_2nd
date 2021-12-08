@@ -158,10 +158,10 @@ function Harvest_color($row_){
 function csv_tablename($KEY1_ , $KEY21_ , $KEY31_ , $KEY32_ , $KEY33_){
     echo '<form name="formcsv" method="post" action="記録CSV処理.php">';
         echo "<input type='hidden' name='key1' value='{$KEY1_}'>";
-        echo "<input type='hidden' name='key21' value='<?={$KEY21_}?>'>";
-        echo "<input type='hidden' name='key31' value='<?={$KEY31_}?>'>";
-        echo "<input type='hidden' name='key32' value='<?={$KEY32_}?>'>";
-        echo "<input type='hidden' name='key33' value='<?={$KEY33_}?>'>";
+        echo "<input type='hidden' name='key21' value='{$KEY21_}'>";
+        echo "<input type='hidden' name='key31' value='{$KEY31_}'>";
+        echo "<input type='hidden' name='key32' value='{$KEY32_}'>";
+        echo "<input type='hidden' name='key33' value='{$KEY33_}'>";
         echo "<input type='submit' value='CSVファイルを保存'>";
     echo '</form>';
 
