@@ -25,6 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 } 
 else {
+    echo'a';
     $set_name = '';
     $set_work = '';
     $set_year = date('Y');
