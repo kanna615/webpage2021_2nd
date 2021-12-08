@@ -91,28 +91,28 @@ try{
 
 <?php 
 function Harvest_color($row_){
-    echo "<tr><td align="center">{$row_['member']}</td>";
-    echo "<td align="center">{$row_['work_time']}</td>";
-    echo "<td align="center">{$row_['work']}</td>";
+    echo "<tr><td align='center'>{$row_['member']}</td>";
+    echo "<td align='center'>{$row_['work_time']}</td>";
+    echo "<td align='center'>{$row_['work']}</td>";
     
     if($row_['eff']>80 && $row_['work']=="収穫"){
-        echo "<td align="center" bgcolor="#7cfc00"><b>{$row_['eff']}</b></td>";
+        echo "<td align='center' bgcolor='#7cfc00'><b>{$row_['eff']}</b></td>";
     
     }elseif($row_['eff']>50 && $row_['work']=="収穫"){
     
-        echo "<td align="center" bgcolor="#00bfff"><b>{$row_['eff']}</b></td>";
+        echo "<td align='center' bgcolor='#00bfff'><b>{$row_['eff']}</b></td>";
     
     }elseif($row_['eff']>30 && $row_['work']=="収穫"){
     
-        echo "<td align="center" bgcolor="#ffd700"><b>{$row_['eff']}</b></td>";
+        echo "<td align='center' bgcolor='#ffd700'><b>{$row_['eff']}</b></td>";
     
     }elseif($row_['eff']<30 && $row_['work']=="収穫" && $row_['eff']!=""){
     
-        echo "<td align="center" bgcolor="#ff4500"><b>{$row_['eff']}</b></td>";
+        echo "<td align='center' bgcolor='#ff4500'><b>{$row_['eff']}</b></td>";
     
     }else{
     
-        echo "<td align="center">{$row_['eff']}</td>";
+        echo "<td align='center'>{$row_['eff']}</td>";
     
     }
     
