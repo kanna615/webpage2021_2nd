@@ -91,70 +91,35 @@ try{
 
 <?php 
 function Harvest_color($row_){
-    echo "<tr>";
-    echo '<td align="center">';
-    echo "{$row_['member']}";
-    echo "</td>";
-    echo '<td align="center">';
-    echo "{$row_['work_time']}";
-    echo "</td>";
-    echo '<td align="center">';
-    echo "{$row_['work']}";
-    echo "</td>";
+    echo "<tr><td align="center">{$row_['member']}</td>";
+    echo "<td align="center">{$row_['work_time']}</td>";
+    echo "<td align="center">{$row_['work']}</td>";
     
     if($row_['eff']>80 && $row_['work']=="収穫"){
-        echo '<td align="center" bgcolor="#7cfc00">';
-        echo "<b>";
-        echo "{$row_['eff']}";
-        echo "</b>";
-        echo "</td>";
+        echo "<td align="center" bgcolor="#7cfc00"><b>{$row_['eff']}</b></td>";
     
     }elseif($row_['eff']>50 && $row_['work']=="収穫"){
     
-        echo '<td align="center" bgcolor="#00bfff">';
-        echo "<b>";
-        echo "{$row_['eff']}";
-        echo "</b>";
-        echo "</td>";
+        echo "<td align="center" bgcolor="#00bfff"><b>{$row_['eff']}</b></td>";
     
     }elseif($row_['eff']>30 && $row_['work']=="収穫"){
     
-        echo '<td align="center" bgcolor="#ffd700">';
-        echo "<b>";
-        echo "{$row_['eff']}";
-        echo "</b>";
-        echo "</td>";
+        echo "<td align="center" bgcolor="#ffd700"><b>{$row_['eff']}</b></td>";
     
     }elseif($row_['eff']<30 && $row_['work']=="収穫" && $row_['eff']!=""){
     
-        echo '<td align="center" bgcolor="#ff4500">';
-        echo "<b>";
-        echo "{$row_['eff']}";
-        echo "</b>";
-        echo "</td>";
+        echo "<td align="center" bgcolor="#ff4500"><b>{$row_['eff']}</b></td>";
     
     }else{
     
-        echo '<td align="center">';
-        echo "{$row_['eff']}";
-        echo "</td>";
+        echo "<td align="center">{$row_['eff']}</td>";
     
     }
     
-    echo '<td align="center">';
-    echo "{$row_['bx']}";
-    echo "</td>";
-    echo '<td align="center">';
-    echo "{$row_['rane']}";
-    echo "</td>";
-    echo '<td align="center">';
-    echo "{$row_['d_ymd']}";
-    echo "</td>";
-    echo '<td align="center">';
-    echo "{$row_['dt']}";
-    echo "</td>";
-    echo "</tr>";
-
+    echo "<td align="center">{$row_['bx']}</td>";
+    echo "<td align="center">{$row_['rane']}</td>";
+    echo "<td align="center">{$row_['d_ymd']}</td>";
+    echo "<td align="center">{$row_['dt']}</td></tr>";
 
 }
 ?>
