@@ -14,6 +14,25 @@ $pass = "Nstyle";
 if(isset($_SESSION["pass"]) && $_SESSION["pass"]==$pass){
 ?>
 
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['search_key']) OR isset($_POST['work']) OR isset($_POST['year']) OR isset($_POST['month']) OR isset($_POST['day'])) {
+        $set_name = $_POST['search_key'];
+        $set_work = $_POST['work'];
+        $set_year = $_POST['year'];
+        $set_month = $_POST['month'];
+        $set_day = $_POST['day'];
+    }
+} 
+else {
+    $set_name = '';
+    $set_work = '';
+    $set_year = date('Y');
+    $set_month = date('n');
+    $set_day = '';
+}
+?>
+
 <hr size="9" noshade>
 <h1>#作業記録管理ページ</h1>
 <hr size="4" noshade>
@@ -22,11 +41,11 @@ if(isset($_SESSION["pass"]) && $_SESSION["pass"]==$pass){
 <form name="form1" method="post" action="作業記録.php">
        
         <font size="4" color="#000000">名前で検索:</font><br>
-        <input type="text" name="search_key" value="<?php echo $KEY21; ?>"><br> 
+        <input type="text" name="search_key" value="<?php echo $set_name; ?>"><br> 
         
         <font size="4" color="#000000">作業内容を指定:</font><br>
         <select name="work">
-           <option value="" selected>----作業内容を選択してください----</option>
+           <option value="<?php echo $set_work; ?>" selected><?php echo $set_work; ?></option>
             <option value="収穫">収穫</option>
             <option value="芽かき">芽かき</option>
             <option value="追い巻き">追い巻き</option>
@@ -35,7 +54,7 @@ if(isset($_SESSION["pass"]) && $_SESSION["pass"]==$pass){
 
         <font size="4" color="#000000">日付で検索:</font><br>
         <select name="year">
-            <option value="" selected>----年を選択してください----</option>
+            <option value="<?php echo $set_year; ?>" selected><?php echo $set_year; ?></option>
             <?php
                 for($i=2021;$i<=2035;$i++){
                     echo"<option value='{$i}'>{$i}</option>";
@@ -44,7 +63,7 @@ if(isset($_SESSION["pass"]) && $_SESSION["pass"]==$pass){
         </select>
         年
         <select name="month">
-            <option value="" selected>----月を選択してください----</option>
+            <option value="<?php echo $set_month; ?>" selected><?php echo $set_month; ?></option>
             <?php
                 for($i=1;$i<=12;$i++){
                     echo"<option value='{$i}'>{$i}</option>";
@@ -53,7 +72,7 @@ if(isset($_SESSION["pass"]) && $_SESSION["pass"]==$pass){
         </select>
         月
         <select name="day">
-            <option value="" selected>----日を選択してください----</option>
+            <option value="<?php echo $set_day; ?>" selected><?php echo $set_day; ?></option>
             <?php
                 for($i=1;$i<=31;$i++){
                     echo"<option value='{$i}'>{$i}</option>";
