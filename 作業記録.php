@@ -116,10 +116,10 @@ function Harvest_color($row_){
     
     }
     
-    echo "<td align="center">{$row_['bx']}</td>";
-    echo "<td align="center">{$row_['rane']}</td>";
-    echo "<td align="center">{$row_['d_ymd']}</td>";
-    echo "<td align="center">{$row_['dt']}</td></tr>";
+    echo "<td align='center'>{$row_['bx']}</td>";
+    echo "<td align='center'>{$row_['rane']}</td>";
+    echo "<td align='center'>{$row_['d_ymd']}</td>";
+    echo "<td align='center'>{$row_['dt']}</td></tr>";
 
 }
 ?>
