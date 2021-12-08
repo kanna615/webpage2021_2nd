@@ -53,6 +53,7 @@ else {
         <font size="4" color="#000000">作業内容を指定:</font><br>
         <select name="work">
            <option value="<?php echo $set_work; ?>" selected><?php echo $set_work; ?></option>
+            <option value="">指定なし</option>
             <option value="収穫">収穫</option>
             <option value="芽かき">芽かき</option>
             <option value="追い巻き">追い巻き</option>
@@ -62,6 +63,7 @@ else {
         <font size="4" color="#000000">日付で検索:</font><br>
         <select name="year">
             <option value="<?php echo $set_year; ?>" selected><?php echo $set_year; ?></option>
+            <option value="">指定なし</option>
             <?php
                 for($i=2021;$i<=2035;$i++){
                     echo"<option value='{$i}'>{$i}</option>";
@@ -71,6 +73,7 @@ else {
         年
         <select name="month">
             <option value="<?php echo $set_month; ?>" selected><?php echo $set_month; ?></option>
+            <option value="">指定なし</option>
             <?php
                 for($i=1;$i<=12;$i++){
                     echo"<option value='{$i}'>{$i}</option>";
@@ -80,6 +83,7 @@ else {
         月
         <select name="day">
             <option value="<?php echo $set_day; ?>" selected><?php echo $set_day; ?></option>
+            <option value="">指定なし</option>
             <?php
                 for($i=1;$i<=31;$i++){
                     echo"<option value='{$i}'>{$i}</option>";
