@@ -91,6 +91,8 @@ try{
 
 <?php 
 function Harvest_color($row_){
+    echo $row_['member'];
+
     echo "<tr>";
     echo '<td align="center">';
     echo "<?=htmlspecialchars({$row_['member']})?>";
