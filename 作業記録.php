@@ -155,6 +155,25 @@ function Harvest_color($row_){
 ?>
 
 <?php
+function csv_tablename($KEY1_ , $KEY21_ , $KEY31_ , $KEY32_ , $KEY33_){
+    echo '<form name="formcsv" method="post" action="記録CSV処理.php">';
+        echo "<input type='hidden' name='key1' value='<?={$KEY1_}?>'>";
+        echo "<input type='hidden' name='key21' value='<?={$KEY21_}?>'>";
+        echo "<input type='hidden' name='key31' value='<?={$KEY31_}?>'>";
+        echo "<input type='hidden' name='key32' value='<?={$KEY32_}?>'>";
+        echo "<input type='hidden' name='key33' value='<?={$KEY33_}?>'>";
+        echo "<input type='submit' value='CSVファイルを保存'>";
+    echo '</form>';
+
+    echo '<table width="1300" border="1" cellspacing="2" cellpadding="18">';
+    echo '<tbody>';
+    echo '<tr><th>名前</th><th>作業時間[分]</th><th>作業内容</th><th>作業効率[%]</th><th>収穫ケース個数</th><th>レーン</th><th>年月日</th><th>時刻</th></tr>';
+
+}
+
+?>
+
+<?php
 $DAY = (string) $_POST["day"];
 $work = $_POST["work"];
 /*▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
@@ -184,19 +203,10 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
     }
     ?>
     
-    <form name="formcsv" method="post" action="記録CSV処理.php">
-        <input type="hidden" name="key1" value="<?=$KEY1?>">
-        <input type="hidden" name="key21" value="<?=$KEY21?>">
-        <input type="hidden" name="key31" value="<?=$KEY31?>">
-        <input type="hidden" name="key32" value="<?=$KEY32?>">
-        <input type="hidden" name="key33" value="<?=$KEY33?>">
-        <input type="submit" value="CSVファイルを保存">
-    </form>
-
-    <table width="1300" border="1" cellspacing="2" cellpadding="18">
-    <tbody>
-    <tr><th>名前</th><th>作業時間[分]</th><th>作業内容</th><th>作業効率[%]</th><th>収穫ケース個数</th><th>レーン</th><th>年月日</th><th>時刻</th></tr>
-
+    <?php
+    csv_tablename($KEY1 , $KEY21 , $KEY31 , $KEY32 , $KEY33);
+    ?>
+    
     <?php
     $rs = $stmh->fetchall ();
     
@@ -244,18 +254,9 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
     }
     ?>
 
-    <form name="formcsv" method="post" action="記録CSV処理.php">
-        <input type="hidden" name="key1" value="<?=$KEY1?>">
-        <input type="hidden" name="key21" value="<?=$KEY21?>">
-        <input type="hidden" name="key31" value="<?=$KEY31?>">
-        <input type="hidden" name="key32" value="<?=$KEY32?>">
-        <input type="hidden" name="key33" value="<?=$KEY33?>">
-        <input type="submit" value="CSVファイルを保存">
-    </form>
-
-    <table width="1300" border="1" cellspacing="2" cellpadding="18">
-    <tbody>
-    <tr><th>名前</th><th>作業時間[分]</th><th>作業内容</th><th>作業効率[%]</th><th>収穫ケース個数</th><th>レーン</th><th>年月日</th><th>時刻</th></tr>
+    <?php
+    csv_tablename($KEY1 , $KEY21 , $KEY31 , $KEY32 , $KEY33);
+    ?>
 
     <?php
     $rs = $stmh->fetchall ();
@@ -293,18 +294,10 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
     $GYOU = 0;
     ?>
     
-    <form name="formcsv" method="post" action="記録CSV処理.php">
-        <input type="hidden" name="key1" value="<?=$KEY1?>">
-        <input type="hidden" name="key21" value="<?=$KEY21?>">
-        <input type="hidden" name="key31" value="<?=$KEY31?>">
-        <input type="hidden" name="key32" value="<?=$KEY32?>">
-        <input type="hidden" name="key33" value="<?=$KEY33?>">
-        <input type="submit" value="CSVファイルを保存">
-    </form>
-    
-    <table width="1300" border="1" cellspacing="2" cellpadding="18">
-    <tbody>
-    <tr><th>名前</th><th>作業時間[分]</th><th>作業内容</th><th>作業効率[%]</th><th>収穫ケース個数</th><th>レーン</th><th>年月日</th><th>時刻</th></tr>
+    <?php
+    csv_tablename($KEY1 , $KEY21 , $KEY31 , $KEY32 , $KEY33);
+    ?>
+
     <?php
     for($mm=1;$mm<13;$mm++){                //ループで、1月～12月のテーブルを全て取得
         $tabname="b_".$_POST["year"]."_".$mm;   //テーブル名を作成
@@ -366,18 +359,9 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
     }
     ?>
     
-    <form name="formcsv" method="post" action="記録CSV処理.php">
-        <input type="hidden" name="key1" value="<?=$KEY1?>">
-        <input type="hidden" name="key21" value="<?=$KEY21?>">
-        <input type="hidden" name="key31" value="<?=$KEY31?>">
-        <input type="hidden" name="key32" value="<?=$KEY32?>">
-        <input type="hidden" name="key33" value="<?=$KEY33?>">
-        <input type="submit" value="CSVファイルを保存">
-    </form>
-    
-    <table width="1300" border="1" cellspacing="2" cellpadding="18">
-    <tbody>
-    <tr><th>名前</th><th>作業時間[分]</th><th>作業内容</th><th>作業効率[%]</th><th>収穫ケース個数</th><th>レーン</th><th>年月日</th><th>時刻</th></tr>
+    <?php
+    csv_tablename($KEY1 , $KEY21 , $KEY31 , $KEY32 , $KEY33);
+    ?>
 
     <?php
     $rs = $stmh->fetchall ();
@@ -425,18 +409,9 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
     }
     ?>
 
-    <form name="formcsv" method="post" action="記録CSV処理.php">
-        <input type="hidden" name="key1" value="<?=$KEY1?>">
-        <input type="hidden" name="key21" value="<?=$KEY21?>">
-        <input type="hidden" name="key31" value="<?=$KEY31?>">
-        <input type="hidden" name="key32" value="<?=$KEY32?>">
-        <input type="hidden" name="key33" value="<?=$KEY33?>">
-        <input type="submit" value="CSVファイルを保存">
-    </form>
-    
-    <table width="1300" border="1" cellspacing="2" cellpadding="18">
-    <tbody>
-    <tr><th>名前</th><th>作業時間[分]</th><th>作業内容</th><th>作業効率[%]</th><th>収穫ケース個数</th><th>レーン</th><th>年月日</th><th>時刻</th></tr>
+    <?php
+    csv_tablename($KEY1 , $KEY21 , $KEY31 , $KEY32 , $KEY33);
+    ?>
 
     <?php
     $rs = $stmh->fetchall ();
@@ -471,18 +446,10 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
     $GYOU = 0;
     ?>
     
-    <form name="formcsv" method="post" action="記録CSV処理.php">
-        <input type="hidden" name="key1" value="<?=$KEY1?>">
-        <input type="hidden" name="key21" value="<?=$KEY21?>">
-        <input type="hidden" name="key31" value="<?=$KEY31?>">
-        <input type="hidden" name="key32" value="<?=$KEY32?>">
-        <input type="hidden" name="key33" value="<?=$KEY33?>">
-        <input type="submit" value="CSVファイルを保存">
-    </form>
-    
-    <table width="1300" border="1" cellspacing="2" cellpadding="18">
-    <tbody>
-    <tr><th>名前</th><th>作業時間[分]</th><th>作業内容</th><th>作業効率[%]</th><th>収穫ケース個数</th><th>レーン</th><th>年月日</th><th>時刻</th></tr>
+    <?php
+    csv_tablename($KEY1 , $KEY21 , $KEY31 , $KEY32 , $KEY33);
+    ?>
+
     <?php
     for($mm=1;$mm<13;$mm++){                //ループで、1月～12月のテーブルを全て取得
         $tabname="b_".$_POST["year"]."_".$mm;   //テーブル名を作成
@@ -610,19 +577,10 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
     }
     ?>
     
-    <form name="formcsv" method="post" action="記録CSV処理.php">
-        <input type="hidden" name="key1" value="<?=$KEY1?>">
-        <input type="hidden" name="key21" value="<?=$KEY21?>">
-        <input type="hidden" name="key31" value="<?=$Y?>">
-        <input type="hidden" name="key32" value="<?=$M?>">
-        <input type="hidden" name="key33" value="<?=$KEY33?>">
-        <input type="submit" value="CSVファイルを保存">
-    </form>
+    <?php
+    csv_tablename($KEY1 , $KEY21 , $KEY31 , $KEY32 , $KEY33);
+    ?>
     
-    <table width="1300" border="1" cellspacing="2" cellpadding="18">
-    <tbody>
-    <tr><th>名前</th><th>作業時間[分]</th><th>作業内容</th><th>作業効率[%]</th><th>収穫ケース個数</th><th>レーン</th><th>年月日</th><th>時刻</th></tr>
-
     <?php
     $rs = $stmh->fetchall ();
     foreach ( $rs as $row ) {
