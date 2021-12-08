@@ -95,7 +95,7 @@ function Harvest_color($row_){
 
     echo "<tr>";
     echo '<td align="center">';
-    echo "<?=htmlspecialchars({$row_['member']})?>";
+    echo "{$row_['member']}";
     echo "</td>";
     echo '<td align="center">';
     echo "<?=htmlspecialchars({$row_['work_time']})?>";
