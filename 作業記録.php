@@ -35,7 +35,7 @@ if(isset($_SESSION["pass"]) && $_SESSION["pass"]==$pass){
 
         <font size="4" color="#000000">日付で検索:</font><br>
         <select name="year">
-            <option value=<?= $KEY31 ?> selected></option>
+            <option value="<?php echo $KEY31;?>" selected></option>
             <?php
                 for($i=2021;$i<=2035;$i++){
                     echo"<option value='{$i}'>{$i}</option>";
@@ -44,7 +44,7 @@ if(isset($_SESSION["pass"]) && $_SESSION["pass"]==$pass){
         </select>
         年
         <select name="month">
-            <option value=$KEY32 selected></option>
+            <option value="<?php echo $KEY32;?>" selected></option>
             <?php
                 for($i=1;$i<=12;$i++){
                     echo"<option value='{$i}'>{$i}</option>";
@@ -53,7 +53,7 @@ if(isset($_SESSION["pass"]) && $_SESSION["pass"]==$pass){
         </select>
         月
         <select name="day">
-            <option value=<?= $KEY33 ?> selected></option>
+            <option value="<?php echo $KEY33;?>" selected></option>
             <?php
                 for($i=1;$i<=31;$i++){
                     echo"<option value='{$i}'>{$i}</option>";
