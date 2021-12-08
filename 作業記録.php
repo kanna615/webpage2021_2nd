@@ -22,14 +22,14 @@ if(isset($_SESSION["pass"]) && $_SESSION["pass"]==$pass){
 <form name="form1" method="post" action="作業記録.php">
        
         <font size="4" color="#000000">名前で検索:</font><br>
-        <input type="text" name="search_key" value="<?php $KEY21; ?>"><br> 
+        <input type="text" name="search_key" value="<?php echo $KEY21; ?>"><br> 
         
         <font size="4" color="#000000">作業内容を指定:</font><br>
         <select name="work">
            <option value="" selected>----作業内容を選択してください----</option>
-            <option value="収穫" selected>収穫</option>
-            <option value="芽かき" selected>芽かき</option>
-            <option value="追い巻き" selected>追い巻き</option>
+            <option value="収穫">収穫</option>
+            <option value="芽かき">芽かき</option>
+            <option value="追い巻き">追い巻き</option>
         </select>
         <br>      
 
@@ -38,7 +38,7 @@ if(isset($_SESSION["pass"]) && $_SESSION["pass"]==$pass){
             <option value="" selected>----年を選択してください----</option>
             <?php
                 for($i=2021;$i<=2035;$i++){
-                    echo"<option value='{$i}' selected>{$i}</option>";
+                    echo"<option value='{$i}'>{$i}</option>";
                 }
             ?>
         </select>
@@ -47,7 +47,7 @@ if(isset($_SESSION["pass"]) && $_SESSION["pass"]==$pass){
             <option value="" selected>----月を選択してください----</option>
             <?php
                 for($i=1;$i<=12;$i++){
-                    echo"<option value='{$i}' selected>{$i}</option>";
+                    echo"<option value='{$i}'>{$i}</option>";
                 }
             ?>
         </select>
@@ -56,7 +56,7 @@ if(isset($_SESSION["pass"]) && $_SESSION["pass"]==$pass){
             <option value="" selected>----日を選択してください----</option>
             <?php
                 for($i=1;$i<=31;$i++){
-                    echo"<option value='{$i}' selected>{$i}</option>";
+                    echo"<option value='{$i}'>{$i}</option>";
                 }
             ?>
         </select>
