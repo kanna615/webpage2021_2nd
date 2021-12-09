@@ -71,7 +71,6 @@ else {
         </div> 
         </select>
     </div>
-    <br>
     <div class="row mb-3">
         <label for="inputday" class="col-sm-1 control-label">日付</label>
         <div class="col-sm-3">
@@ -86,7 +85,8 @@ else {
             </select>
         </dev>
         <div class="col-xs-1">
-        <label for="inputyear" class="form-label">年</label>
+        <!-- <label for="inputyear" class="form-label">年</label> -->
+            年
         </div>
         <div class="col-sm-1">
             <select class="form-select"　name="month">
