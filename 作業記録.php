@@ -158,7 +158,7 @@ function Harvest_color($row_){
 function csv_tablename($KEY1_ , $KEY21_ , $KEY31_ , $KEY32_ , $KEY33_){
     echo $KEY1_;
     echo $KEY21_;
-    echo $KEY31_;
+    echo "1";
     echo $KEY32_;
     echo $KEY33_;
     echo '<form name="formcsv" method="post" action="記録CSV処理.php">';
