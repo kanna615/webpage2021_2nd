@@ -214,6 +214,7 @@ if($_POST['key1']=="11"){
 	mb_convert_variables("UTF-8", "SJIS", $csv[$i]['dt']);
 */
 // mb_convert_variables('Shift_JIS' , 'UTF-8' , $csv );
+$csv = str_replace(PHP_EOL, "\r\n", stream_get_contents($fp));
 $csv = mb_convert_encoding($csv, 'SJIS-win', 'UTF-8');
 echo $csv;
 return;
