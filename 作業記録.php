@@ -59,17 +59,15 @@ else {
             <input class="form-control"　type="text" name="search_key" value="<?php echo $set_name; ?>">
         </div> 
     </div>   
-    <div class="form-group">
+    <div class="row mb-3">
         <label class="col-sm-2 control-label">作業内容</label>
-        <div class="col-sm-10 radio">
-            <select class="form-control"　name="work">
-                <option value="<?php echo $set_work; ?>" selected><?php echo $set_work; ?></option>
-                <option value="">指定なし</option>
-                <option value="収穫">収穫</option>
-                <option value="芽かき">芽かき</option>
-                <option value="追い巻き">追い巻き</option>
-            </select>
-        </dev>
+        <select class="form-select"　name="work">
+            <option value="<?php echo $set_work; ?>" selected><?php echo $set_work; ?></option>
+            <option value="">指定なし</option>
+            <option value="収穫">収穫</option>
+            <option value="芽かき">芽かき</option>
+            <option value="追い巻き">追い巻き</option>
+        </select>
     </div>
     <div class="form-group">
         <label class="col-sm-2 control-label">日付</label>
