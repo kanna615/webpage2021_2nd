@@ -218,7 +218,9 @@ if($_POST['key1']=="11"){
 // $csv = str_replace(PHP_EOL, "\r\n", stream_get_contents($fp));
 // $csv = mb_convert_encoding($csv, 'SJIS-win', 'UTF-8');
 
-stream_filter_prepend($csv,'convert.iconv.utf-8/cp932');
+// stream_filter_prepend($csv,'convert.iconv.utf-8/cp932');
+
+$csv = pack('C*',0xFE,0xFF). mb_convert_encoding("1,".$csv, 'UTF-16LE', 'UTF-8');
 echo $csv;
 return;
 
