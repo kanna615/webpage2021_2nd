@@ -62,8 +62,8 @@ else {
         <div class="panel-body">
             <form class="form-horizontal" name="form1" method="post" action="作業記録.php">
                 <div class="form-group">
-                    <label class="col-sm-2 control-label">名前</label>
-                    <div class="col-sm-10">
+                    <label class="control-label col-xs-2">名前</label>
+                    <div class="col-xs-5">
                         <input class="form-control"　type="text" name="search_key" value="<?php echo $set_name; ?>">
                     </div>
                 </div>
@@ -117,7 +117,7 @@ else {
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                         <input type="hidden" name="pass" value="<?=$_SESSION["pass"]?>">
-                        <input class="btn btn-default"　type="submit" value="検索">
+                        <input type="submit" value="検索">
                     </div>
                 </div>
             </form>
