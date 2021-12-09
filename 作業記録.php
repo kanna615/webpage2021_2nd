@@ -83,7 +83,9 @@ else {
                     }
                 ?>
             </select>
-            <label class="col px=0">年</label>
+            <div class="col-sm-3">
+                <label class="col px=0">年</label>
+            </div>
             <select class="form-select"　name="month">
                 <option value="<?php echo $set_month; ?>" selected><?php echo $set_month; ?></option>
                 <option value="">指定なし</option>
