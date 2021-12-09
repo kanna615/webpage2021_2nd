@@ -83,9 +83,11 @@ else {
                     }
                 ?>
             </select>
-            <div class="col-sm-3">
-                <label class="col px=0">年</label>
-            </div>
+        </dev>
+        <div class="col-sm-3">
+            <label class="col px=0">年</label>
+        </div>
+        <div class="col-sm-1">
             <select class="form-select"　name="month">
                 <option value="<?php echo $set_month; ?>" selected><?php echo $set_month; ?></option>
                 <option value="">指定なし</option>
@@ -95,7 +97,9 @@ else {
                     }
                 ?>
             </select>
+        </div>
             月
+        <div class="col-sm-1">
             <select class="form-select"　name="day">
                 <option value="<?php echo $set_day; ?>" selected><?php echo $set_day; ?></option>
                 <option value="">指定なし</option>
@@ -105,8 +109,8 @@ else {
                     }
                 ?>
             </select>
+        </dev>    
             日
-        </dev>
     </div>
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
