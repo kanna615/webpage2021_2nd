@@ -42,7 +42,7 @@ try{
     $stmh->execute(array($Lname,$Fname,$work,$Cid));
     print "更新しました。<br>";
 }catch(PDOException $Exception){
-    print　"エラー";
+    print "エラー";
 }
 
 ?>
