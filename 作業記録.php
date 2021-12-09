@@ -85,7 +85,7 @@ else {
             </select>
         </dev>
         <div class="col-sm-3">
-            <label class="col px=0">年</label>
+            <label class="form-label">年</label>
         </div>
         <div class="col-sm-1">
             <select class="form-select"　name="month">
