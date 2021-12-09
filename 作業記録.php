@@ -583,7 +583,7 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
     ?>
     
     <?php
-    csv_tablename($KEY1 , 9 , $KEY31 , $KEY32 , $KEY33);
+    csv_tablename($KEY1 , $KEY21 , $Y , $M , $KEY33);
     ?>
 
     <?php
