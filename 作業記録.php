@@ -56,11 +56,11 @@ else {
         <div class="panel-heading">検索フォーム</div>
         <div class="panel-body">
             <form class="form-horizontal" name="form1" method="post" action="作業記録.php">
-                <div class="col-auto">
-                    <label cfor="inputPassword6" class="col-form-label">名前</label>
-                </div>  
-                <div class="col-auto">
-                    <input class="form-control"　type="text" name="search_key" value="<?php echo $set_name; ?>">
+                <div class="row mb-3">
+                    <label class="col-form-label">名前</label>
+                    <div class="col-sm-10">
+                        <input class="form-control"　type="text" name="search_key" value="<?php echo $set_name; ?>">
+                    </div> 
                 </div>   
                 <div class="form-group">
                     <label class="col-sm-2 control-label">作業内容</label>
