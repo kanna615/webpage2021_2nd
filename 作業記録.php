@@ -64,13 +64,13 @@ else {
                 <div class="form-group">
                     <label class="col-sm-2 control-label">名前</label>
                     <div class="col-sm-10">
-                        <input type="text" name="search_key" value="<?php echo $set_name; ?>">
+                        <input class="form-control"　type="text" name="search_key" value="<?php echo $set_name; ?>">
                     </div>
                 </div>
-                <div class="form-sagyo">
+                <div class="form-group">
                     <label class="col-sm-2 control-label">作業内容</label>
                     <div class="col-sm-10 radio">
-                        <select name="work">
+                        <select class="form-control"　name="work">
                             <option value="<?php echo $set_work; ?>" selected><?php echo $set_work; ?></option>
                             <option value="">指定なし</option>
                             <option value="収穫">収穫</option>
@@ -79,10 +79,10 @@ else {
                         </select>
                     </dev>
                 </div>
-                <div class="form-hi">
+                <div class="form-group">
                     <label class="col-sm-2 control-label">日付</label>
                     <div class="col-sm-10 hi">
-                        <select name="year">
+                        <select class="form-control"　name="year">
                             <option value="<?php echo $set_year; ?>" selected><?php echo $set_year; ?></option>
                             <option value="">指定なし</option>
                             <?php
@@ -92,7 +92,7 @@ else {
                             ?>
                         </select>
                         年
-                        <select name="month">
+                        <select class="form-control"　name="month">
                             <option value="<?php echo $set_month; ?>" selected><?php echo $set_month; ?></option>
                             <option value="">指定なし</option>
                             <?php
@@ -102,7 +102,7 @@ else {
                             ?>
                         </select>
                         月
-                        <select name="day">
+                        <select class="form-control"　name="day">
                             <option value="<?php echo $set_day; ?>" selected><?php echo $set_day; ?></option>
                             <option value="">指定なし</option>
                             <?php
@@ -117,7 +117,7 @@ else {
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                         <input type="hidden" name="pass" value="<?=$_SESSION["pass"]?>">
-                        <input type="submit" value="検索">
+                        <input class="btn btn-default"　type="submit" value="検索">
                     </div>
                 </div>
             </form>
