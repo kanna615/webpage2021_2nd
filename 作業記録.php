@@ -493,65 +493,8 @@ if($_POST["search_key"]!="" && $_POST["year"]!="" && $_POST["month"]!="" && $DAY
 }elseif($_POST["search_key"]!="" && $_POST["year"]=="" && $_POST["month"]=="" && $DAY==""){
     print("年を指定してください。<br>")
     ?>
-<!--    <table width="1300" border="1" cellspacing="2" cellpadding="18">
-    <tbody>
-    <tr><th>名前</th><th>作業時間[分]</th><th>作業内容</th><th>作業効率[%]</th><th>収穫ケース個数</th><th>レーン</th><th>年月日</th><th>時刻</th></tr>-->
-    <?php
-    /*for($mm=1;$mm<13;$mm++){   
-        $YEA=2019;             //ループで、1月～12月のテーブルを全て取得
-        $tabname="b_".$YEA."_".$mm;   //テーブル名を作成
-        $tabsel="SELECT * FROM ".$tabname;//セレクト文作成
-        $search_key=$_POST["search_key"];
-        //クエリ実行
-        try{
-            $stmh=$pdo->query($tabsel);
-            $stmh->execute();
-        }catch(PDOException $Exception){
-        print "エラー:"."データテーブルが見つかりません。<br>";
-        }
- 
-        $rs = $stmh->fetchall ();
-        foreach ( $rs as $row ) {
-            if($row['member']==$search_key){
-    ?> 
-        <tr>
-        <td align="center"><?=htmlspecialchars($row['member'])?></td>
-        <td align="center"><?=htmlspecialchars($row['work_time'])?></td>
-        <td align="center"><?=htmlspecialchars($row['work'])?></td>
-        <?php
-        if($row['eff']>80 && $row['work']=="収穫"){?>
-            <td align="center" bgcolor="#7cfc00"><b><?=htmlspecialchars($row['eff'])?></b></td>
-        <?php
-        }elseif($row['eff']>50 && $row['work']=="収穫"){
-        ?>
-            <td align="center" bgcolor="#00bfff"><b><?=htmlspecialchars($row['eff'])?></b></td>
-        <?php
-        }elseif($row['eff']>30 && $row['work']=="収穫"){
-        ?>
-            <td align="center" bgcolor="#ffd700"><b><?=htmlspecialchars($row['eff'])?></b></td>
-        <?php
-        }elseif($row['eff']<30 && $row['work']=="収穫" && $row['eff']!=""){
-        ?>
-            <td align="center" bgcolor="#ff4500"><b><?=htmlspecialchars($row['eff'])?></b></td>
-        <?php
-        }else{
-        ?>
-            <td align="center"><?=htmlspecialchars($row['eff'])?></td>
-        <?php
-        }
-        ?>
-        <td align="center"><?=htmlspecialchars($row['bx'])?></td>
-        <td align="center"><?=htmlspecialchars($row['rane'])?></td>
-        <td align="center"><?=htmlspecialchars($row['d_ymd'])?></td>
-        <td align="center"><?=htmlspecialchars($row['dt'])?></td>
-        </tr>
-          
-    <?php
-            
-            }
-    
-        }//foreachの括弧
-    }*/
+
+<?php
 /*■■■■■■■■■■■■■■■■■■■
 (8)全て空(今月の記録)
 パターン番号＝4
