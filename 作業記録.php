@@ -54,10 +54,79 @@ else {
 <hr size="4" noshade>
 <a href="index.php">ホームページへ</a><br>
 <a href="グラフ表示ページ.php">グラフ表示</a><br>
-<form name="form1" method="post" action="作業記録.php">
-       
+<!-- <form name="form1" method="post" action="作業記録.php"> -->
+
+    <div class="container">
+      <div class="panel panel-default">   
         <div class="panel-heading">検索フォーム</div>
-        <font size="4" color="#000000">名前で検索:</font><br>
+        <div class="panel-body">
+            <form class="form-horizontal" name="form1" method="post" action="作業記録.php">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">名前</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="search_key" value="<?php echo $set_name; ?>">
+                    </div>
+                </div>
+                <div class="form-sagyo">
+                    <label class="col-sm-2 control-label">作業内容</label>
+                    <div class="col-sm-10 radio">
+                        <select name="work">
+                            <option value="<?php echo $set_work; ?>" selected><?php echo $set_work; ?></option>
+                            <option value="">指定なし</option>
+                            <option value="収穫">収穫</option>
+                            <option value="芽かき">芽かき</option>
+                            <option value="追い巻き">追い巻き</option>
+                        </select>
+                    </dev>
+                </div>
+                <div class="form-hi">
+                    <label class="col-sm-2 control-label">日付</label>
+                    <div class="col-sm-10 hi">
+                        <select name="year">
+                            <option value="<?php echo $set_year; ?>" selected><?php echo $set_year; ?></option>
+                            <option value="">指定なし</option>
+                            <?php
+                                for($i=2021;$i<=2035;$i++){
+                                    echo"<option value='{$i}'>{$i}</option>";
+                                }
+                            ?>
+                        </select>
+                        年
+                        <select name="month">
+                            <option value="<?php echo $set_month; ?>" selected><?php echo $set_month; ?></option>
+                            <option value="">指定なし</option>
+                            <?php
+                                for($i=1;$i<=12;$i++){
+                                    echo"<option value='{$i}'>{$i}</option>";
+                                }
+                            ?>
+                        </select>
+                        月
+                        <select name="day">
+                            <option value="<?php echo $set_day; ?>" selected><?php echo $set_day; ?></option>
+                            <option value="">指定なし</option>
+                            <?php
+                                for($i=1;$i<=31;$i++){
+                                    echo"<option value='{$i}'>{$i}</option>";
+                                }
+                            ?>
+                        </select>
+                        日
+                    </dev>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <input type="hidden" name="pass" value="<?=$_SESSION["pass"]?>">
+                        <input type="submit" value="検索">
+                    </div>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+
+
+        <!-- <font size="4" color="#000000">名前で検索:</font><br>
         <input type="text" name="search_key" value="<?php echo $set_name; ?>"><br> 
         
         <font size="4" color="#000000">作業内容を指定:</font><br>
@@ -104,7 +173,7 @@ else {
         <br>
         <input type="hidden" name="pass" value="<?=$_SESSION["pass"]?>">
         <input type="submit" value="検索">
-</form>
+</form> -->
 
 <?php
 /*▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
