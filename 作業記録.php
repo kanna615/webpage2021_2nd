@@ -71,7 +71,7 @@ else {
         </div> 
         </select>
     </div>
-    <div class="row">
+    <div class="row g-3">
         <div class="col-sm-1">日付</label>
         <div class="col-sm-3">
             <select class="form-select"　name="year">
