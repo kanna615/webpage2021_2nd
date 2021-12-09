@@ -83,7 +83,7 @@ else {
                     }
                 ?>
             </select>
-        </dev>
+        </div>
         <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">年</label>
         <!-- <div class="col-sm-1">年</label> -->
         <div class="col">
@@ -109,7 +109,7 @@ else {
                     }
                 ?>
             </select>
-        </dev>    
+        </div>    
         <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">日</label>
         <!-- <div class="col-sm-1">日</label> -->
     </div>
