@@ -55,13 +55,13 @@ else {
 <form class="form-horizontal" name="form1" method="post" action="作業記録.php">
     <div class="row mb-3">
         <label for="inputname" class="col-sm-2 col-form-label">名前</label>
-        <div class="col-sm-2">
+        <div class="col-sm-3">
             <input class="form-control"　type="text" name="search_key" value="<?php echo $set_name; ?>">
         </div> 
     </div>   
     <div class="row mb-3">
         <label class="col-sm-2 control-label">作業内容</label>
-        <div class="col-sm-2">
+        <div class="col-sm-3">
             <select class="form-select"　name="work">
                 <option value="<?php echo $set_work; ?>" selected><?php echo $set_work; ?></option>
                 <option value="">指定なし</option>
@@ -71,10 +71,10 @@ else {
         </div> 
         </select>
     </div>
-    <div class="form-group">
+    <div class="row mb-3">
         <label class="col-sm-2 control-label">日付</label>
-        <div class="col-sm-10 hi">
-            <select class="form-control"　name="year">
+        <div class="col-sm-1">
+            <select class="form-select"　name="year">
                 <option value="<?php echo $set_year; ?>" selected><?php echo $set_year; ?></option>
                 <option value="">指定なし</option>
                 <?php
@@ -84,7 +84,7 @@ else {
                 ?>
             </select>
             年
-            <select class="form-control"　name="month">
+            <select class="form-select"　name="month">
                 <option value="<?php echo $set_month; ?>" selected><?php echo $set_month; ?></option>
                 <option value="">指定なし</option>
                 <?php
@@ -94,7 +94,7 @@ else {
                 ?>
             </select>
             月
-            <select class="form-control"　name="day">
+            <select class="form-select"　name="day">
                 <option value="<?php echo $set_day; ?>" selected><?php echo $set_day; ?></option>
                 <option value="">指定なし</option>
                 <?php
