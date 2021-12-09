@@ -62,9 +62,11 @@ else {
         <div class="panel-body">
             <form class="form-horizontal" name="form1" method="post" action="作業記録.php">
                 <div class="form-group">
-                    <label class="control-label col-xs-2">名前</label>
-                    <div class="col-xs-5">
-                        <input class="form-control"　type="text" name="search_key" value="<?php echo $set_name; ?>">
+                    <label class="col-sm-2 control-label">名前</label>
+                    <div class="row">
+                        <div class="col-sm-10">
+                            <input class="form-control"　type="text" name="search_key" value="<?php echo $set_name; ?>">
+                        </div>
                     </div>
                 </div>
                 <div class="form-group">
