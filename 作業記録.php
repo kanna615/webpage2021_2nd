@@ -57,7 +57,7 @@ else {
         <div class="panel-body">
             <form class="form-horizontal" name="form1" method="post" action="作業記録.php">
                 <div class="row mb-3">
-                    <label class="col-form-label">名前</label>
+                    <label for="inputname" class="col-form-label">名前</label>
                     <div class="col-sm-10">
                         <input class="form-control"　type="text" name="search_key" value="<?php echo $set_name; ?>">
                     </div> 
