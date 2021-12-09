@@ -61,12 +61,14 @@ else {
     </div>   
     <div class="row mb-3">
         <label class="col-sm-2 control-label">作業内容</label>
-        <select class="form-select"　name="work">
-            <option value="<?php echo $set_work; ?>" selected><?php echo $set_work; ?></option>
-            <option value="">指定なし</option>
-            <option value="収穫">収穫</option>
-            <option value="芽かき">芽かき</option>
-            <option value="追い巻き">追い巻き</option>
+        <div class="col-sm-10">
+            <select class="form-select"　name="work">
+                <option value="<?php echo $set_work; ?>" selected><?php echo $set_work; ?></option>
+                <option value="">指定なし</option>
+                <option value="収穫">収穫</option>
+                <option value="芽かき">芽かき</option>
+                <option value="追い巻き">追い巻き</option>
+        </div> 
         </select>
     </div>
     <div class="form-group">
