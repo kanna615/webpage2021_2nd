@@ -73,7 +73,7 @@ else {
     </div>
     <div class="row mb-3">
         <label class="col-sm-2 control-label">日付</label>
-        <div class="col-sm-1">
+        <div class="col-sm-3">
             <select class="form-select"　name="year">
                 <option value="<?php echo $set_year; ?>" selected><?php echo $set_year; ?></option>
                 <option value="">指定なし</option>
