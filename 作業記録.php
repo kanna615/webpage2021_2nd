@@ -72,7 +72,7 @@ else {
         </select>
     </div>
     <div class="row mb-3">
-        <label for="inputdate" class="col-sm-1 col-form-label">日付</label>
+        <div class="col-sm-1">日付</label>
         <div class="col-sm-3">
             <select class="form-select"　name="year">
                 <option value="<?php echo $set_year; ?>" selected><?php echo $set_year; ?></option>
@@ -84,7 +84,7 @@ else {
                 ?>
             </select>
         </dev>
-        <label for="inputyear" class="col-sm-1 col-form-label">年</label>
+        <div class="col-sm-1">年</label>
         <div class="col-sm-1">
             <select class="form-select"　name="month">
                 <option value="<?php echo $set_month; ?>" selected><?php echo $set_month; ?></option>
@@ -96,7 +96,7 @@ else {
                 ?>
             </select>
         </div>
-        <label for="inputyear" class="col-sm-1 col-form-label">月</label>
+        <div class="col-sm-1">月</label>
         <div class="col-sm-1">
             <select class="form-select"　name="day">
                 <option value="<?php echo $set_day; ?>" selected><?php echo $set_day; ?></option>
@@ -108,7 +108,7 @@ else {
                 ?>
             </select>
         </dev>    
-        <label for="inputyear" class="col-sm-1 col-form-label">日</label>
+        <div class="col-sm-1">日</label>
     </div>
     <div class="row mb-3">
         <div class="col-sm-offset-2 col-sm-10">
