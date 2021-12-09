@@ -220,7 +220,7 @@ if($_POST['key1']=="11"){
 
 // stream_filter_prepend($csv,'convert.iconv.utf-8/cp932');
 
-$csv = pack('C*',0xFE,0xFF). mb_convert_encoding("1,".$csv, 'UTF-16LE', 'UTF-8');
+// $csv = pack('C*',0xFE,0xFF). mb_convert_encoding("1,".$csv, 'UTF-16LE', 'UTF-8');
 echo $csv;
 return;
 
