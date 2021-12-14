@@ -60,60 +60,60 @@ session_start();
           <input class="form-control" 　type="text" name="search_key" value="<?php echo $set_name; ?>">
         </div>
       </div>
-      <div class="row mb-3">
-        <label for="inputsagyo" class="col-sm-1 control-label">作業内容</label>
-        <div class="col-sm-3">
-          <select class="form-select" 　name="work">
-            <option value="<?php echo $set_work; ?>" selected><?php echo $set_work; ?></option>
-            <option value="">指定なし</option>
-            <option value="収穫">収穫</option>
-            <option value="芽かき">芽かき</option>
-            <option value="追い巻き">追い巻き</option>
-        </div>
+      
+      <label for="inputsagyo" class="col-sm-1 control-label">作業内容</label>
+      <div class="col-sm-3">
+        <select class="form-select" 　name="work">
+          <option value="<?php echo $set_work; ?>" selected><?php echo $set_work; ?></option>
+          <option value="">指定なし</option>
+          <option value="収穫">収穫</option>
+          <option value="芽かき">芽かき</option>
+          <option value="追い巻き">追い巻き</option>
+      </div>
+      </select>
+      
+     
+      <label for="inputsagyo" class="col-sm-1 control-label">日付</label>
+      <div class="col-sm-1">
+        <select class="form-select" 　name="year">
+          <option value="<?php echo $set_year; ?>" selected><?php echo $set_year; ?></option>
+          <option value="">指定なし</option>
+          <?php
+          for ($i = 2021; $i <= 2035; $i++) {
+            echo "<option value='{$i}'>{$i}</option>";
+          }
+          ?>
         </select>
       </div>
-      <div class="row mb-4">
-        <label for="inputsagyo" class="col-sm-1 control-label">日付</label>
-        <div class="col-sm-1">
-          <select class="form-select" 　name="year">
-            <option value="<?php echo $set_year; ?>" selected><?php echo $set_year; ?></option>
-            <option value="">指定なし</option>
-            <?php
-            for ($i = 2021; $i <= 2035; $i++) {
-              echo "<option value='{$i}'>{$i}</option>";
-            }
-            ?>
-          </select>
-        </div>
-        <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">年</label> -->
-        <div class="col">年</div>
-        <div class="col-sm-1">
-          <select class="form-select" 　name="month">
-            <option value="<?php echo $set_month; ?>" selected><?php echo $set_month; ?></option>
-            <option value="">指定なし</option>
-            <?php
-            for ($i = 1; $i <= 12; $i++) {
-              echo "<option value='{$i}'>{$i}</option>";
-            }
-            ?>
-          </select>
-        </div>
-        <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">月</label> -->
-        <div class="col">月</div>
-        <div class="col-sm-1">
-          <select class="form-select" 　name="day">
-            <option value="<?php echo $set_day; ?>" selected><?php echo $set_day; ?></option>
-            <option value="">指定なし</option>
-            <?php
-            for ($i = 1; $i <= 31; $i++) {
-              echo "<option value='{$i}'>{$i}</option>";
-            }
-            ?>
-          </select>
-        </div>
-        <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">日</label> -->
-        <div class="col">日</div>
+      <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">年</label> -->
+      <div class="col">年</div>
+      <div class="col-sm-1">
+        <select class="form-select" 　name="month">
+          <option value="<?php echo $set_month; ?>" selected><?php echo $set_month; ?></option>
+          <option value="">指定なし</option>
+          <?php
+          for ($i = 1; $i <= 12; $i++) {
+            echo "<option value='{$i}'>{$i}</option>";
+          }
+          ?>
+        </select>
       </div>
+      <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">月</label> -->
+      <div class="col">月</div>
+      <div class="col-sm-1">
+        <select class="form-select" 　name="day">
+          <option value="<?php echo $set_day; ?>" selected><?php echo $set_day; ?></option>
+          <option value="">指定なし</option>
+          <?php
+          for ($i = 1; $i <= 31; $i++) {
+            echo "<option value='{$i}'>{$i}</option>";
+          }
+          ?>
+        </select>
+      </div>
+      <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">日</label> -->
+      <div class="col">日</div>
+    
       <div class="row mb-3">
         <div class="col-sm-offset-2 col-sm-10">
           <input type="hidden" name="pass" value="<?= $_SESSION["pass"] ?>">
