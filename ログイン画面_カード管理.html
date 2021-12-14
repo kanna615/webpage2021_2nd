@@ -8,11 +8,8 @@
 
     <a href="index.php">戻る</a><br>
     <form name="form2" method="post" action="カード管理.php">
-        {% comment %} <p>パスワードを入力してください。</p> {% endcomment %}
-        <h1 class="h3 mb-3 fw-normal">パスワードを入力してください。</h1>
-        <label for="inputPassword" class="visually-hidden">パスワード</label>
-        <input type="password" name="pass" autocomplete="off" id="inputPassword" class="form-control" placeholder="パスワード" required>
-        {% comment %} <input type="text" name="pass" autocomplete="off"> {% endcomment %}
+        <p>パスワードを入力してください。</p>
+        <input type="text" name="pass" autocomplete="off">
         <br>
         <input type="submit" value="ログイン">
     </form>
