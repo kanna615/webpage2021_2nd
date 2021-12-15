@@ -47,7 +47,7 @@ session_start();
 
     <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">ログインページ</a>
+        <a class="navbar-brand" href="#">作業記録管理ページ</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -58,19 +58,19 @@ session_start();
               <a class="nav-link" aria-current="page" href="index.php">ホーム</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">リンク</a>
+              <a class="nav-link" href="カード管理.php">カード管理</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <hr size="9" noshade>
+    <!-- <hr size="9" noshade>
     <h1>#作業記録管理ページ</h1>
     <hr size="4" noshade>
     <a href="index.php">ホームページへ</a><br>
     <a href="グラフ表示ページ.php">グラフ表示</a><br>
-    <!-- <form name="form1" method="post" action="作業記録.php"> -->
+   <form name="form1" method="post" action="作業記録.php"> -->
 
 
     <form class="form-horizontal" name="form1" method="post" action="作業記録.php">
