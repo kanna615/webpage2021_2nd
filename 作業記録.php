@@ -123,7 +123,7 @@ session_start();
             </div>
             <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">月</label> -->
             <div class="col">月</div>
-            <div class="col-md-2">
+            <div class="col-auto">
               <select class="form-select" name="day">
                 <option value="<?php echo $set_day; ?>" selected><?php echo $set_day; ?></option>
                 <option value="">指定なし</option>
