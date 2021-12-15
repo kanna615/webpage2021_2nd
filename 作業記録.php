@@ -137,7 +137,7 @@ session_start();
             <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">日</label> -->
             <div class="col">日</div>
           </div>
-          <div class="row mb-3">
+          <div class="row mb-3 mt-3">
             <div class="col-sm-offset-2 col-sm-10">
               <input type="hidden" name="pass" value="<?= $_SESSION["pass"] ?>">
               <input type="submit" value="検索">
