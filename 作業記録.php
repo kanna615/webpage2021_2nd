@@ -72,7 +72,7 @@ session_start();
     <a href="グラフ表示ページ.php">グラフ表示</a><br>
    <form name="form1" method="post" action="作業記録.php"> -->
 
-    <div class="container">
+    <div class="container-fluid">
       <div class="p-4 p-md-5 mb-4 mt-5 text-white rounded bg-secondary">
         <form class="form-horizontal" name="form1" method="post" action="作業記録.php">
           <div class="row mb-3 mt-2">
@@ -107,36 +107,35 @@ session_start();
                 }
                 ?>
               </select>
-              <!-- </div> -->
-              <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">年</label> -->
-              <div class="col">年</div>
-              <div class="col-auto">
-                <select class="form-select" name="month">
-                  <option value="<?php echo $set_month; ?>" selected><?php echo $set_month; ?></option>
-                  <option value="">指定なし</option>
-                  <?php
-                  for ($i = 1; $i <= 12; $i++) {
-                    echo "<option value='{$i}'>{$i}</option>";
-                  }
-                  ?>
-                </select>
-              </div>
-              <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">月</label> -->
-              <div class="col">月</div>
-              <div class="col-auto">
-                <select class="form-select" name="day">
-                  <option value="<?php echo $set_day; ?>" selected><?php echo $set_day; ?></option>
-                  <option value="">指定なし</option>
-                  <?php
-                  for ($i = 1; $i <= 31; $i++) {
-                    echo "<option value='{$i}'>{$i}</option>";
-                  }
-                  ?>
-                </select>
-              </div>
-              <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">日</label> -->
-              <div class="col">日</div>
             </div>
+            <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">年</label> -->
+            <div class="col">年</div>
+            <div class="col-auto">
+              <select class="form-select" name="month">
+                <option value="<?php echo $set_month; ?>" selected><?php echo $set_month; ?></option>
+                <option value="">指定なし</option>
+                <?php
+                for ($i = 1; $i <= 12; $i++) {
+                  echo "<option value='{$i}'>{$i}</option>";
+                }
+                ?>
+              </select>
+            </div>
+            <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">月</label> -->
+            <div class="col">月</div>
+            <div class="col-auto">
+              <select class="form-select" name="day">
+                <option value="<?php echo $set_day; ?>" selected><?php echo $set_day; ?></option>
+                <option value="">指定なし</option>
+                <?php
+                for ($i = 1; $i <= 31; $i++) {
+                  echo "<option value='{$i}'>{$i}</option>";
+                }
+                ?>
+              </select>
+            </div>
+            <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">日</label> -->
+            <div class="col">日</div>
           </div>
           <div class="row mb-3">
             <div class="col-sm-offset-2 col-sm-10">
