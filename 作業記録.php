@@ -109,7 +109,7 @@ session_start();
               </select>
             </div>
             <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">年</label> -->
-            <div class="col">年</div>
+            <div class="col mr-0">年</div>
             <div class="col-sm-1">
               <select class="form-select" name="month">
                 <option value="<?php echo $set_month; ?>" selected><?php echo $set_month; ?></option>
