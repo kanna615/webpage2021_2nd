@@ -45,6 +45,26 @@ session_start();
     }
     ?>
 
+    <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ログインページ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample02">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="index.php">ホーム</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">リンク</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <hr size="9" noshade>
     <h1>#作業記録管理ページ</h1>
     <hr size="4" noshade>
@@ -60,7 +80,7 @@ session_start();
           <input class="form-control" 　type="text" name="search_key" value="<?php echo $set_name; ?>">
         </div>
       </div>
-      
+
       <label for="inputsagyo" class="col-sm-1 control-label">作業内容</label>
       <div class="col-sm-3">
         <select class="form-select" 　name="work">
@@ -71,8 +91,8 @@ session_start();
           <option value="追い巻き">追い巻き</option>
       </div>
       </select>
-      
-     
+
+
       <label for="inputsagyo" class="col-sm-1 control-label">日付</label>
       <div class="col-sm-1">
         <select class="form-select" 　name="year">
@@ -113,7 +133,7 @@ session_start();
       </div>
       <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">日</label> -->
       <div class="col">日</div>
-    
+
       <div class="row mb-3">
         <div class="col-sm-offset-2 col-sm-10">
           <input type="hidden" name="pass" value="<?= $_SESSION["pass"] ?>">
