@@ -95,9 +95,9 @@ session_start();
             </select>
           </div>
 
-          <div class="row mb-3 mt-2">
+          <div class="row mb-3 mt-3">
             <label for="inputsagyo" class="col-sm-1 control-label">日付</label>
-            <div class="col-sm-1">
+            <div class="col-xs-2">
               <select class="form-select" 　name="year">
                 <option value="<?php echo $set_year; ?>" selected><?php echo $set_year; ?></option>
                 <option value="">指定なし</option>
