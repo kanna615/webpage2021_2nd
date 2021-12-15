@@ -107,37 +107,36 @@ session_start();
                 }
                 ?>
               </select>
-              年
+              <!-- </div> -->
+              <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">年</label> -->
+              <div class="col">年</div>
+              <div class="col-auto">
+                <select class="form-select" name="month">
+                  <option value="<?php echo $set_month; ?>" selected><?php echo $set_month; ?></option>
+                  <option value="">指定なし</option>
+                  <?php
+                  for ($i = 1; $i <= 12; $i++) {
+                    echo "<option value='{$i}'>{$i}</option>";
+                  }
+                  ?>
+                </select>
+              </div>
+              <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">月</label> -->
+              <div class="col">月</div>
+              <div class="col-auto">
+                <select class="form-select" name="day">
+                  <option value="<?php echo $set_day; ?>" selected><?php echo $set_day; ?></option>
+                  <option value="">指定なし</option>
+                  <?php
+                  for ($i = 1; $i <= 31; $i++) {
+                    echo "<option value='{$i}'>{$i}</option>";
+                  }
+                  ?>
+                </select>
+              </div>
+              <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">日</label> -->
+              <div class="col">日</div>
             </div>
-            <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">年</label> -->
-            <!-- <div class="col">年</div> -->
-            <div class="col-auto">
-              年
-              <select class="form-select" name="month">
-                <option value="<?php echo $set_month; ?>" selected><?php echo $set_month; ?></option>
-                <option value="">指定なし</option>
-                <?php
-                for ($i = 1; $i <= 12; $i++) {
-                  echo "<option value='{$i}'>{$i}</option>";
-                }
-                ?>
-              </select>
-            </div>
-            <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">月</label> -->
-            <div class="col">月</div>
-            <div class="col-auto">
-              <select class="form-select" name="day">
-                <option value="<?php echo $set_day; ?>" selected><?php echo $set_day; ?></option>
-                <option value="">指定なし</option>
-                <?php
-                for ($i = 1; $i <= 31; $i++) {
-                  echo "<option value='{$i}'>{$i}</option>";
-                }
-                ?>
-              </select>
-            </div>
-            <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">日</label> -->
-            <div class="col">日</div>
           </div>
           <div class="row mb-3">
             <div class="col-sm-offset-2 col-sm-10">
