@@ -73,7 +73,7 @@ session_start();
    <form name="form1" method="post" action="作業記録.php"> -->
 
     <div class="container">
-      <div class="p-4 p-md-5 mb-4 mt-2 text-white rounded bg-secondary">
+      <div class="p-4 p-md-5 mb-4 mt-5 text-white rounded bg-secondary">
         <form class="form-horizontal" name="form1" method="post" action="作業記録.php">
           <div class="row mb-3 mt-5">
             <label for="inputname" class="col-sm-1 col-form-label">名前</label>
