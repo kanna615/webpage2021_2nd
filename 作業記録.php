@@ -107,12 +107,13 @@ session_start();
                 }
                 ?>
               </select>
+              年
             </div>
             <!-- <label for="colFormLabelSm" class="col-sm-1 col-form-label col-form-label-sm">年</label> -->
             <!-- <div class="col">年</div> -->
             <div class="col-auto">
               年
-              <select class="form-select pl-5" name="month">
+              <select class="form-select" name="month">
                 <option value="<?php echo $set_month; ?>" selected><?php echo $set_month; ?></option>
                 <option value="">指定なし</option>
                 <?php
