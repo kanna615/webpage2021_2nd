@@ -241,7 +241,7 @@ session_start();
       } elseif ($row_['eff'] < 30 && $row_['work'] == "収穫" && $row_['eff'] != "") {
 
         // echo "<td align='center' bgcolor='#ff4500'><b>{$row_['eff']}</b></td>";
-        echo "<td align='center' class='table-danger border-dark'><b>{$row_['eff']}</b></td>";
+        echo "<td align='center' class='bg-danger border-dark'><b>{$row_['eff']}</b></td>";
 
       } else {
 
