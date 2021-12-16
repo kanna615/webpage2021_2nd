@@ -232,13 +232,17 @@ session_start();
         echo "<td align='center' class='table-success border-dark'><b>{$row_['eff']}</b></td>";
       } elseif ($row_['eff'] > 50 && $row_['work'] == "収穫") {
 
-        echo "<td align='center' bgcolor='#00bfff'><b>{$row_['eff']}</b></td>";
+        // echo "<td align='center' bgcolor='#00bfff'><b>{$row_['eff']}</b></td>";
+        echo "<td align='center' class='table-info border-dark'><b>{$row_['eff']}</b></td>";
       } elseif ($row_['eff'] > 30 && $row_['work'] == "収穫") {
 
-        echo "<td align='center' bgcolor='#ffd700'><b>{$row_['eff']}</b></td>";
+        // echo "<td align='center' bgcolor='#ffd700'><b>{$row_['eff']}</b></td>";
+        echo "<td align='center' class='table-warning border-dark'><b>{$row_['eff']}</b></td>";
       } elseif ($row_['eff'] < 30 && $row_['work'] == "収穫" && $row_['eff'] != "") {
 
-        echo "<td align='center' bgcolor='#ff4500'><b>{$row_['eff']}</b></td>";
+        // echo "<td align='center' bgcolor='#ff4500'><b>{$row_['eff']}</b></td>";
+        echo "<td align='center' class='table-danger border-dark'><b>{$row_['eff']}</b></td>";
+
       } else {
 
         echo "<td align='center'>{$row_['eff']}</td>";
