@@ -266,7 +266,7 @@ session_start();
       echo '<table class="table table-bordered">';
       // echo '<tbody>';
       echo '<thead class="table-light">';
-      echo '<tr class="table-light"><th>名前</th><th>作業時間[分]</th><th>作業内容</th><th>作業効率[%]</th><th>収穫ケース個数</th><th>レーン</th><th>年月日</th><th>時刻</th></tr>';
+      echo '<tr><th>名前</th><th>作業時間[分]</th><th>作業内容</th><th>作業効率[%]</th><th>収穫ケース個数</th><th>レーン</th><th>年月日</th><th>時刻</th></tr>';
       echo '</thead>';
       echo '<tbody>';
     }
