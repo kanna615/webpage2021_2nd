@@ -229,7 +229,7 @@ session_start();
 
       if ($row_['eff'] > 80 && $row_['work'] == "収穫") {
         // echo "<td align='center' bgcolor='#7cfc00'><b>{$row_['eff']}</b></td>";
-        echo "<td align='center' class='bg-success border-dark'><b>{$row_['eff']}</b></td>";
+        echo "<td align='center' class='table-success border-dark'><b>{$row_['eff']}</b></td>";
       } elseif ($row_['eff'] > 50 && $row_['work'] == "収穫") {
 
         // echo "<td align='center' bgcolor='#00bfff'><b>{$row_['eff']}</b></td>";
