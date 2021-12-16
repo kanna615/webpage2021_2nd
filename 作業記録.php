@@ -265,7 +265,7 @@ session_start();
       // echo '<table width="1300" border="1" cellspacing="2" cellpadding="18">';
       echo '<table class="table table-bordered border-dark">';
       // echo '<tbody>';
-      echo '<thead class="table-light">';
+      echo '<thead class="table-light border-dark">';
       echo '<tr><th>名前</th><th>作業時間[分]</th><th>作業内容</th><th>作業効率[%]</th><th>収穫ケース個数</th><th>レーン</th><th>年月日</th><th>時刻</th></tr>';
       echo '</thead>';
       echo '<tbody>';
