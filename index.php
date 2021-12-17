@@ -38,64 +38,69 @@ session_start();
 ▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲*/
     ?>
 
-    <hr size="9" noshade>
+    <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ホーム画面</a>
+        </div>
+    </nav>
+    <!-- <hr size="9" noshade>
     <h1>#ホーム画面</h1>
     <hr size="4" noshade>
-    <br>
+    <br> -->
     <!-- <font> -->
-        <?php
-        if ((isset($_SESSION["pass"])) && ($_SESSION["pass"] == $pass)) {
-        ?>
-            <a href="" onclick="document.sagyou.submit();return false;">
-                <font size="5">作業記録管理ページ</font>
-            </a><br><br>
-            <a href="" onclick="document.card.submit();return false;">
-                <font size="5">カード管理ページ</font>
-            </a>
-            <form method="post" name="sagyou" action="作業記録.php">
-                <input type="hidden" name="pass" value=<?= $_SESSION["pass"] ?>>
-            </form>
-            <form method="post" name="card" action="カード管理.php">
-                <input type="hidden" name="pass" value=<?= $_SESSION["pass"] ?>>
-            </form>
-        <?php
-        } else {
-        ?>
-            <a href="ログイン画面_作業記録.html">
-                <font size="5">作業記録管理ページ</font>
-            </a><br><br>
-            <a href="ログイン画面_カード管理.html">
-                <font size="5">カード管理ページ</font>
-            </a>
-        <?php
-        }
-        ?>
+    <?php
+    if ((isset($_SESSION["pass"])) && ($_SESSION["pass"] == $pass)) {
+    ?>
+        <a href="" onclick="document.sagyou.submit();return false;">
+            <font size="5">作業記録管理ページ</font>
+        </a><br><br>
+        <a href="" onclick="document.card.submit();return false;">
+            <font size="5">カード管理ページ</font>
+        </a>
+        <form method="post" name="sagyou" action="作業記録.php">
+            <input type="hidden" name="pass" value=<?= $_SESSION["pass"] ?>>
+        </form>
+        <form method="post" name="card" action="カード管理.php">
+            <input type="hidden" name="pass" value=<?= $_SESSION["pass"] ?>>
+        </form>
+    <?php
+    } else {
+    ?>
+        <a href="ログイン画面_作業記録.html">
+            <font size="5">作業記録管理ページ</font>
+        </a><br><br>
+        <a href="ログイン画面_カード管理.html">
+            <font size="5">カード管理ページ</font>
+        </a>
+    <?php
+    }
+    ?>
 
-        <br><br>
-        <hr size="4" noshade>
-        <h2>作業の状況</h2>
-        <hr size="4" noshade>
+    <br><br>
+    <hr size="4" noshade>
+    <h2>作業の状況</h2>
+    <hr size="4" noshade>
 
-        <?php
-        try {
-            $stmh = $pdo->query("SELECT * FROM sample_member");
-            $stmh->execute();
-        } catch (PDOException $Exception) {
-            print "エラー:" . $Exception->getMessage();
-        }
+    <?php
+    try {
+        $stmh = $pdo->query("SELECT * FROM sample_member");
+        $stmh->execute();
+    } catch (PDOException $Exception) {
+        print "エラー:" . $Exception->getMessage();
+    }
 
-        $rs = $stmh->fetchall();
-        $count = 0;
-        foreach ($rs as $row) {
-            if ($row['rane'] != "0") {
-        ?>
-                <h3><?= $row['last_name'] ?>:　<font color="#ff0000"><?= $row['rane'] ?></font>レーン [<?= $row['work'] ?>]</h3>
-        <?php
-                $count += 1;
-            }
+    $rs = $stmh->fetchall();
+    $count = 0;
+    foreach ($rs as $row) {
+        if ($row['rane'] != "0") {
+    ?>
+            <h3><?= $row['last_name'] ?>:　<font color="#ff0000"><?= $row['rane'] ?></font>レーン [<?= $row['work'] ?>]</h3>
+    <?php
+            $count += 1;
         }
-        ?>
-        <h4>作業中の人数：<?= $count ?>人</h4>
+    }
+    ?>
+    <h4>作業中の人数：<?= $count ?>人</h4>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
