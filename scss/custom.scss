@@ -1,4 +1,7 @@
 // $primary: #0074d9;
 // $danger: #ff4136;
 $primary: #b1afaf;
+$theme-colors: (
+  "test": #ff00ff,
+);
 @import "../node_modules/bootstrap/scss/bootstrap";

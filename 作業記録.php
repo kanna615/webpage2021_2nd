@@ -74,7 +74,7 @@ session_start();
    <form name="form1" method="post" action="作業記録.php"> -->
 
     <div class="container-fluid">
-      <div class="p-3 p-md-3 mt-5 rounded-top bg-secondary">
+      <div class="p-3 p-md-3 mt-5 rounded-top bg-test">
         <div class="col-auto">検索フォーム</div>
       </div>
       <!-- <div class="p-4 p-md-5 mb-4 mt-5 text-white rounded-bottom bg-seablue"> -->
