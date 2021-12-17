@@ -96,7 +96,7 @@ session_start();
     <hr size="4" noshade>
     <div class="row">
         <div class="col-auto">
-            <div class="p-1 p-md-1 my-1 mx-2 bg-primary"></div>
+            <div class="px-1 py-2 m-0 bg-primary"></div>
         </div>
 
         <div class="col-auto">
