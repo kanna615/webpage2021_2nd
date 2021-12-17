@@ -34,7 +34,7 @@ session_start();
                             <a class="nav-link" aria-current="page" href="index.php">ホーム</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="作業管理.php">作業管理</a>
+                            <a class="nav-link" href="作業記録.php">作業管理</a>
                         </li>
                     </ul>
                 </div>
@@ -91,37 +91,44 @@ session_start();
                 print "エラー:" . $Exception->getMessage();
             }
         ?>
+            <div class="row justify-content-md-center">
+                <div class="col-10 m-5">
+                    <table class="table table-bordered border-dark">
+                        <thead>
+                            <tr class="table-light border-dark">
+                                <th>カードID</th>
+                                <th>姓</th>
+                                <th>名</th>
+                                <th>作業内容</th>
+                            </tr>
+                        </thead>
+                        <tbody>
 
-            <table width="1100" border="1" cellspacing="2" cellpadding="18">
-                <tbody>
-                    <tr>
-                        <th>カードID</th>
-                        <th>姓</th>
-                        <th>名</th>
-                        <th>作業内容</th>
-                    </tr>
-
+                            <?php
+                            $rs = $stmh->fetchall();
+                            foreach ($rs as $row) {
+                            ?>
+                                <tr>
+                                    <td align=" center"><?= htmlspecialchars($row['card_id']) ?></td>
+                                    <td align="center"><?= htmlspecialchars($row['last_name']) ?></td>
+                                    <td align="center"><?= htmlspecialchars($row['first_name']) ?></td>
+                                    <td align="center"><b><?= htmlspecialchars($row['work']) ?></b></td>
+                                    <td align="center"><a href="updateform.php?id=<?= htmlspecialchars($row['card_id']) ?>" class="link-info">編集</td>
+                                </tr>
+                        <?php
+                            } //foreachの括弧
+                        }
+                    } else {
+                        print "パスワードが間違っているか、入力されていません。<br>";
+                        ?>
+                        <a href="ログイン画面_カード管理.html">ログインページへ。</a><br>
                     <?php
-                    $rs = $stmh->fetchall();
-                    foreach ($rs as $row) {
+                    }
                     ?>
-                        <tr>
-                            <td align="center"><?= htmlspecialchars($row['card_id']) ?></td>
-                            <td align="center"><?= htmlspecialchars($row['last_name']) ?></td>
-                            <td align="center"><?= htmlspecialchars($row['first_name']) ?></td>
-                            <td align="center"><b><?= htmlspecialchars($row['work']) ?></b></td>
-                            <td align="center"><a href="updateform.php?id=<?= htmlspecialchars($row['card_id']) ?>">編集</td>
-                        </tr>
-                <?php
-                    } //foreachの括弧
-                }
-            } else {
-                print "パスワードが間違っているか、入力されていません。<br>";
-                ?>
-                <a href="ログイン画面_カード管理.html">ログインページへ。</a><br>
-            <?php
-            }
-            ?>
+
+                        </tbody>
+                </div>
+            </div>
 
             <!-- Option 1: Bootstrap Bundle with Popper -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
