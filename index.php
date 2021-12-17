@@ -95,11 +95,11 @@ session_start();
     <br><br>
     <hr size="4" noshade>
     <div class="row">
-        <div class="col-auto">
+        <div class="col">
             <div class="px-1 py-3 ms-2 me-0 bg-primary"></div>
         </div>
 
-        <div class="col-auto">
+        <div class="col">
             <div class="ms-0">
                 <h3>作業の状況</h3>
             </div>
