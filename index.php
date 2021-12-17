@@ -100,7 +100,7 @@ session_start();
         </div>
 
         <div class="col-auto">
-            <div class="ml-0">
+            <div class="ms-0">
                 <h3>作業の状況</h3>
             </div>
         </div>
