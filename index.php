@@ -56,7 +56,7 @@ session_start();
         <hr size="4" noshade>
         <div class="row">
             <div class="col-auto">
-                <div class="px-1 py-3 ms-2 me-0 bg-primary"></div>
+                <div class="px-1 py-3 ms-2 me-0 bg-Secondary"></div>
             </div>
 
             <div class="col-auto">
@@ -87,7 +87,7 @@ session_start();
         <hr size="4" noshade>
         <div class="row">
             <div class="col-auto">
-                <div class="px-1 py-3 ms-2 me-0 bg-primary"></div>
+                <div class="px-1 py-3 ms-2 me-0 bg-Secondary"></div>
             </div>
 
             <div class="col-auto">
@@ -112,7 +112,7 @@ session_start();
     <hr size="4" noshade>
     <div class="row">
         <div class="col-auto">
-            <div class="px-1 py-3 ms-2 me-0 bg-primary"></div>
+            <div class="px-1 py-3 ms-2 me-0 bg-Secondary"></div>
         </div>
 
         <div class="col-auto">
