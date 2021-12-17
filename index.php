@@ -51,18 +51,22 @@ session_start();
     <?php
     if ((isset($_SESSION["pass"])) && ($_SESSION["pass"] == $pass)) {
     ?>
-        <a href="" onclick="document.sagyou.submit();return false;">
-            <font size="5">作業記録管理ページ</font>
-        </a><br><br>
-        <a href="" onclick="document.card.submit();return false;">
-            <font size="5">カード管理ページ</font>
-        </a>
-        <form method="post" name="sagyou" action="作業記録.php">
-            <input type="hidden" name="pass" value=<?= $_SESSION["pass"] ?>>
-        </form>
-        <form method="post" name="card" action="カード管理.php">
-            <input type="hidden" name="pass" value=<?= $_SESSION["pass"] ?>>
-        </form>
+
+        <div class="container-fluid">
+            <a href="" onclick="document.sagyou.submit();return false;">
+                <font size="5">作業記録管理ページ</font>
+            </a><br><br>
+            <a href="" onclick="document.card.submit();return false;">
+                <font size="5">カード管理ページ</font>
+            </a>
+            <form method="post" name="sagyou" action="作業記録.php">
+                <input class="mt-5 bg-dark" type="hidden" name="pass" value=<?= $_SESSION["pass"] ?>>
+            </form>
+            <form method="post" name="card" action="カード管理.php">
+                <input type="hidden" name="pass" value=<?= $_SESSION["pass"] ?>>
+            </form>
+        </div>
+
     <?php
     } else {
     ?>
