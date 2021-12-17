@@ -28,8 +28,8 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-test: #ff00ff;
-  --bs-test-rgb: 255, 0, 255;
+  --bs-purple: #5c0086;
+  --bs-purple-rgb: 92, 0, 134;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -2912,58 +2912,58 @@ textarea.form-control-lg {
   opacity: 0.65;
 }
 
-.btn-test {
-  color: #000;
-  background-color: #ff00ff;
-  border-color: #ff00ff;
+.btn-purple {
+  color: #fff;
+  background-color: #5c0086;
+  border-color: #5c0086;
 }
-.btn-test:hover {
-  color: #000;
-  background-color: #ff26ff;
-  border-color: #ff1aff;
+.btn-purple:hover {
+  color: #fff;
+  background-color: #4e0072;
+  border-color: #4a006b;
 }
-.btn-check:focus + .btn-test, .btn-test:focus {
-  color: #000;
-  background-color: #ff26ff;
-  border-color: #ff1aff;
-  box-shadow: 0 0 0 0.25rem rgba(217, 0, 217, 0.5);
+.btn-check:focus + .btn-purple, .btn-purple:focus {
+  color: #fff;
+  background-color: #4e0072;
+  border-color: #4a006b;
+  box-shadow: 0 0 0 0.25rem rgba(116, 38, 152, 0.5);
 }
-.btn-check:checked + .btn-test, .btn-check:active + .btn-test, .btn-test:active, .btn-test.active, .show > .btn-test.dropdown-toggle {
-  color: #000;
-  background-color: #ff33ff;
-  border-color: #ff1aff;
+.btn-check:checked + .btn-purple, .btn-check:active + .btn-purple, .btn-purple:active, .btn-purple.active, .show > .btn-purple.dropdown-toggle {
+  color: #fff;
+  background-color: #4a006b;
+  border-color: #450065;
 }
-.btn-check:checked + .btn-test:focus, .btn-check:active + .btn-test:focus, .btn-test:active:focus, .btn-test.active:focus, .show > .btn-test.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(217, 0, 217, 0.5);
+.btn-check:checked + .btn-purple:focus, .btn-check:active + .btn-purple:focus, .btn-purple:active:focus, .btn-purple.active:focus, .show > .btn-purple.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(116, 38, 152, 0.5);
 }
-.btn-test:disabled, .btn-test.disabled {
-  color: #000;
-  background-color: #ff00ff;
-  border-color: #ff00ff;
+.btn-purple:disabled, .btn-purple.disabled {
+  color: #fff;
+  background-color: #5c0086;
+  border-color: #5c0086;
 }
 
-.btn-outline-test {
-  color: #ff00ff;
-  border-color: #ff00ff;
+.btn-outline-purple {
+  color: #5c0086;
+  border-color: #5c0086;
 }
-.btn-outline-test:hover {
-  color: #000;
-  background-color: #ff00ff;
-  border-color: #ff00ff;
+.btn-outline-purple:hover {
+  color: #fff;
+  background-color: #5c0086;
+  border-color: #5c0086;
 }
-.btn-check:focus + .btn-outline-test, .btn-outline-test:focus {
-  box-shadow: 0 0 0 0.25rem rgba(255, 0, 255, 0.5);
+.btn-check:focus + .btn-outline-purple, .btn-outline-purple:focus {
+  box-shadow: 0 0 0 0.25rem rgba(92, 0, 134, 0.5);
 }
-.btn-check:checked + .btn-outline-test, .btn-check:active + .btn-outline-test, .btn-outline-test:active, .btn-outline-test.active, .btn-outline-test.dropdown-toggle.show {
-  color: #000;
-  background-color: #ff00ff;
-  border-color: #ff00ff;
+.btn-check:checked + .btn-outline-purple, .btn-check:active + .btn-outline-purple, .btn-outline-purple:active, .btn-outline-purple.active, .btn-outline-purple.dropdown-toggle.show {
+  color: #fff;
+  background-color: #5c0086;
+  border-color: #5c0086;
 }
-.btn-check:checked + .btn-outline-test:focus, .btn-check:active + .btn-outline-test:focus, .btn-outline-test:active:focus, .btn-outline-test.active:focus, .btn-outline-test.dropdown-toggle.show:focus {
-  box-shadow: 0 0 0 0.25rem rgba(255, 0, 255, 0.5);
+.btn-check:checked + .btn-outline-purple:focus, .btn-check:active + .btn-outline-purple:focus, .btn-outline-purple:active:focus, .btn-outline-purple.active:focus, .btn-outline-purple.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(92, 0, 134, 0.5);
 }
-.btn-outline-test:disabled, .btn-outline-test.disabled {
-  color: #ff00ff;
+.btn-outline-purple:disabled, .btn-outline-purple.disabled {
+  color: #5c0086;
   background-color: transparent;
 }
 
@@ -4430,13 +4430,13 @@ textarea.form-control-lg {
   padding: 1.25rem 1rem;
 }
 
-.alert-test {
-  color: #990099;
-  background-color: #ffccff;
-  border-color: #ffb3ff;
+.alert-purple {
+  color: #370050;
+  background-color: #decce7;
+  border-color: #ceb3db;
 }
-.alert-test .alert-link {
-  color: #7a007a;
+.alert-purple .alert-link {
+  color: #2c0040;
 }
 
 @keyframes progress-bar-stripes {
@@ -4706,18 +4706,18 @@ textarea.form-control-lg {
   border-bottom-width: 0;
 }
 
-.list-group-item-test {
-  color: #990099;
-  background-color: #ffccff;
+.list-group-item-purple {
+  color: #370050;
+  background-color: #decce7;
 }
-.list-group-item-test.list-group-item-action:hover, .list-group-item-test.list-group-item-action:focus {
-  color: #990099;
-  background-color: #e6b8e6;
+.list-group-item-purple.list-group-item-action:hover, .list-group-item-purple.list-group-item-action:focus {
+  color: #370050;
+  background-color: #c8b8d0;
 }
-.list-group-item-test.list-group-item-action.active {
+.list-group-item-purple.list-group-item-action.active {
   color: #fff;
-  background-color: #990099;
-  border-color: #990099;
+  background-color: #370050;
+  border-color: #370050;
 }
 
 .btn-close {
@@ -5719,11 +5719,11 @@ textarea.form-control-lg {
   content: "";
 }
 
-.link-test {
-  color: #ff00ff;
+.link-purple {
+  color: #5c0086;
 }
-.link-test:hover, .link-test:focus {
-  color: #ff33ff;
+.link-purple:hover, .link-purple:focus {
+  color: #4a006b;
 }
 
 .ratio {
@@ -6116,8 +6116,8 @@ textarea.form-control-lg {
   border-left: 0 !important;
 }
 
-.border-test {
-  border-color: #ff00ff !important;
+.border-purple {
+  border-color: #5c0086 !important;
 }
 
 .border-white {
@@ -6917,9 +6917,9 @@ textarea.form-control-lg {
 }
 
 /* rtl:end:remove */
-.text-test {
+.text-purple {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-test-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-purple-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-black {
@@ -6973,9 +6973,9 @@ textarea.form-control-lg {
   --bs-text-opacity: 1;
 }
 
-.bg-test {
+.bg-purple {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-test-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--bs-purple-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-black {
