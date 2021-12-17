@@ -100,6 +100,7 @@ session_start();
                                 <th>姓</th>
                                 <th>名</th>
                                 <th>作業内容</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
