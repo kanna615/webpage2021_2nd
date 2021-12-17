@@ -14,6 +14,6 @@ $theme-colors: (
 );
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
-$font-size-base: 30px;
+$font-size-base: 3rem;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
