@@ -139,9 +139,9 @@ session_start();
                 <table class="table table-dark table-info">
                     <tbody>
                         <tr>
-                            <td align='center'>{$row_['last_name']}</td>
-                            <td align='center'>{$row_['rane']}</td>
-                            <td align='center'>{$row_['work']}</td>
+                            <td align='center'><?= $row['last_name'] ?></td>
+                            <td align='center'><?= $row['rane'] ?></td>
+                            <td align='center'><?= $row['work'] ?></td>
                         </tr>
                     </tbody>
                 </table>
