@@ -54,7 +54,15 @@ session_start();
 
         <br>
         <hr size="4" noshade>
-        <h3>管理ページリンク</h3>
+        <div class="row">
+            <div class="col-auto">
+                <div class="px-1 py-3 ms-2 me-0 bg-primary"></div>
+            </div>
+
+            <div class="col-auto">
+                <h3>管理ページリンク</h3>
+            </div>
+        </div>
         <hr size="4" noshade>
 
         <div class="container-fluid">
@@ -77,7 +85,15 @@ session_start();
     ?>
         <br>
         <hr size="4" noshade>
-        <h3>管理ページリンク</h3>
+        <div class="row">
+            <div class="col-auto">
+                <div class="px-1 py-3 ms-2 me-0 bg-primary"></div>
+            </div>
+
+            <div class="col-auto">
+                <h3>管理ページリンク</h3>
+            </div>
+        </div>
         <hr size="4" noshade>
 
         <div class="container-fluid">
@@ -100,9 +116,7 @@ session_start();
         </div>
 
         <div class="col-auto">
-
             <h3>作業の状況</h3>
-
         </div>
     </div>
     <hr size="4" noshade>
