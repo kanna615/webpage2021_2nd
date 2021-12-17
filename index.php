@@ -100,9 +100,9 @@ session_start();
         </div>
 
         <div class="col-auto">
-            <div class="ms-0 px-0">
-                <h3>作業の状況</h3>
-            </div>
+
+            <h3>作業の状況</h3>
+
         </div>
     </div>
     <hr size="4" noshade>
