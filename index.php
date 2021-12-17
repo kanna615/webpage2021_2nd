@@ -54,7 +54,7 @@ session_start();
 
         <br>
         <hr size="4" noshade>
-        <h1>管理ページリンク</h1>
+        <h4>管理ページリンク</h4>
         <hr size="4" noshade>
 
         <div class="container-fluid">
