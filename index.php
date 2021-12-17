@@ -153,7 +153,7 @@ session_start();
                                                                         <table class="table table-success table-striped">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <td style="width: 20%" align='center'>名前</td>
+                                                                                    <td align='center'>名前</td>
                                                                                     <td align='center'>レーン</td>
                                                                                     <td align='center'>作業内容</td>
                                                                                 </tr>
