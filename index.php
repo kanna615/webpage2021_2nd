@@ -134,7 +134,7 @@ session_start();
     ?>
 
     <div class="row">
-        <div class="col-2 ms-5">
+        <div class="col-3 ms-5">
             <table class="table table-info table-striped">
                 <thead>
                     <tr>
