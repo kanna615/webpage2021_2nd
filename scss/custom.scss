@@ -1,7 +1,8 @@
 // $primary: #0074d9;
 // $danger: #ff4136;
+@import "../node_modules/bootstrap/scss/bootstrap";
 $primary: #b1afaf;
-$theme-colors: (
+$custom-colors: (
   "purple": #5c0086,
 );
-@import "../node_modules/bootstrap/scss/bootstrap";
+$theme-colors: map-merge($theme-colors, $custom-colors);
