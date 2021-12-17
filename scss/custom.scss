@@ -1,19 +1,17 @@
-// $primary: #0074d9;
-// $danger: #ff4136;
-@import "../node_modules/bootstrap/scss/bootstrap";
-$primary: #b1afaf;
 $custom-colors: (
   "purple": #c446ff,
 );
+
 $theme-colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-  "success": $success,
-  "info": $info,
-  "warning": $warning,
-  "danger": $danger,
-  "light": $light,
-  "dark": $dark,
+  "primary": #0d6efd,
+  "secondary": #6c757d,
+  "success": #198754,
+  "info": #0dcaf0,
+  "warning": #ffc107,
+  "danger": #dc3545,
+  "light": #f8f9fa,
+  "dark": #212529,
 );
 $theme-colors: map-merge($theme-colors, $custom-colors);
-// @import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "../node_modules/bootstrap/scss/bootstrap";

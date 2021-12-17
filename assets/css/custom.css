@@ -36,6 +36,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+  --bs-purple: #c446ff;
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -44,6 +45,7 @@
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
+  --bs-purple-rgb: 196, 70, 255;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -3166,6 +3168,36 @@ textarea.form-control-lg {
   border-color: #212529;
 }
 
+.btn-purple {
+  color: #000;
+  background-color: #c446ff;
+  border-color: #c446ff;
+}
+.btn-purple:hover {
+  color: #000;
+  background-color: #cd62ff;
+  border-color: #ca59ff;
+}
+.btn-check:focus + .btn-purple, .btn-purple:focus {
+  color: #000;
+  background-color: #cd62ff;
+  border-color: #ca59ff;
+  box-shadow: 0 0 0 0.25rem rgba(167, 60, 217, 0.5);
+}
+.btn-check:checked + .btn-purple, .btn-check:active + .btn-purple, .btn-purple:active, .btn-purple.active, .show > .btn-purple.dropdown-toggle {
+  color: #000;
+  background-color: #d06bff;
+  border-color: #ca59ff;
+}
+.btn-check:checked + .btn-purple:focus, .btn-check:active + .btn-purple:focus, .btn-purple:active:focus, .btn-purple.active:focus, .show > .btn-purple.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(167, 60, 217, 0.5);
+}
+.btn-purple:disabled, .btn-purple.disabled {
+  color: #000;
+  background-color: #c446ff;
+  border-color: #c446ff;
+}
+
 .btn-outline-primary {
   color: #0d6efd;
   border-color: #0d6efd;
@@ -3363,6 +3395,31 @@ textarea.form-control-lg {
 }
 .btn-outline-dark:disabled, .btn-outline-dark.disabled {
   color: #212529;
+  background-color: transparent;
+}
+
+.btn-outline-purple {
+  color: #c446ff;
+  border-color: #c446ff;
+}
+.btn-outline-purple:hover {
+  color: #000;
+  background-color: #c446ff;
+  border-color: #c446ff;
+}
+.btn-check:focus + .btn-outline-purple, .btn-outline-purple:focus {
+  box-shadow: 0 0 0 0.25rem rgba(196, 70, 255, 0.5);
+}
+.btn-check:checked + .btn-outline-purple, .btn-check:active + .btn-outline-purple, .btn-outline-purple:active, .btn-outline-purple.active, .btn-outline-purple.dropdown-toggle.show {
+  color: #000;
+  background-color: #c446ff;
+  border-color: #c446ff;
+}
+.btn-check:checked + .btn-outline-purple:focus, .btn-check:active + .btn-outline-purple:focus, .btn-outline-purple:active:focus, .btn-outline-purple.active:focus, .btn-outline-purple.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(196, 70, 255, 0.5);
+}
+.btn-outline-purple:disabled, .btn-outline-purple.disabled {
+  color: #c446ff;
   background-color: transparent;
 }
 
@@ -4901,6 +4958,15 @@ textarea.form-control-lg {
   color: #101214;
 }
 
+.alert-purple {
+  color: #762a99;
+  background-color: #f3daff;
+  border-color: #edc8ff;
+}
+.alert-purple .alert-link {
+  color: #5e227a;
+}
+
 @keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -5278,6 +5344,20 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #141619;
   border-color: #141619;
+}
+
+.list-group-item-purple {
+  color: #762a99;
+  background-color: #f3daff;
+}
+.list-group-item-purple.list-group-item-action:hover, .list-group-item-purple.list-group-item-action:focus {
+  color: #762a99;
+  background-color: #dbc4e6;
+}
+.list-group-item-purple.list-group-item-action.active {
+  color: #fff;
+  background-color: #762a99;
+  border-color: #762a99;
 }
 
 .btn-close {
@@ -6335,6 +6415,13 @@ textarea.form-control-lg {
   color: #1a1e21;
 }
 
+.link-purple {
+  color: #c446ff;
+}
+.link-purple:hover, .link-purple:focus {
+  color: #d06bff;
+}
+
 .ratio {
   position: relative;
   width: 100%;
@@ -6755,6 +6842,10 @@ textarea.form-control-lg {
 
 .border-dark {
   border-color: #212529 !important;
+}
+
+.border-purple {
+  border-color: #c446ff !important;
 }
 
 .border-white {
@@ -7594,6 +7685,11 @@ textarea.form-control-lg {
   color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-purple {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-purple-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-black {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
@@ -7683,6 +7779,11 @@ textarea.form-control-lg {
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-purple {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-purple-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-black {
