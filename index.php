@@ -52,9 +52,9 @@ session_start();
     if ((isset($_SESSION["pass"])) && ($_SESSION["pass"] == $pass)) {
     ?>
 
-        <br><br>
+        <br>
         <hr size="4" noshade>
-        <h2>管理ページリンク</h2>
+        <h1>管理ページリンク</h1>
         <hr size="4" noshade>
 
         <div class="container-fluid">
@@ -75,9 +75,9 @@ session_start();
     <?php
     } else {
     ?>
-        <br><br>
+        <br>
         <hr size="4" noshade>
-        <h2>管理ページリンク</h2>
+        <h1>管理ページリンク</h1>
         <hr size="4" noshade>
 
         <div class="container-fluid">
@@ -94,7 +94,7 @@ session_start();
 
     <br><br>
     <hr size="4" noshade>
-    <h2>作業の状況</h2>
+    <h1>作業の状況</h1>
     <hr size="4" noshade>
 
     <?php
