@@ -132,23 +132,23 @@ session_start();
     $rs = $stmh->fetchall();
     $count = 0;
     ?>
-
-    <table class="table table-success table-striped">
-        <thead>
-            <tr>
-                <td align='center'>名前</td>
-                <td align='center'>レーン</td>
-                <td align='center'>作業内容</td>
-            </tr>
-        </thead>
-    </table>
+    <div class="ms-5 px-20">
+        <table class="table table-success table-striped">
+            <thead>
+                <tr>
+                    <td align='center'>名前</td>
+                    <td align='center'>レーン</td>
+                    <td align='center'>作業内容</td>
+                </tr>
+            </thead>
+        </table>
     </div>
 
     <?php
     foreach ($rs as $row) {
         if ($row['rane'] != "0") {
     ?>
-            <div class="container-fluid">
+            <div class="ms-5 px-20">
                 <!-- <h3><?= $row['last_name'] ?>:　<font color="#ff0000"><?= $row['rane'] ?></font>レーン [<?= $row['work'] ?>]</h3> -->
                 <table class="table table-success table-striped">
                     <tbody>
