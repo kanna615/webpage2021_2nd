@@ -78,7 +78,7 @@ session_start();
         <div class="col-auto">検索フォーム</div>
       </div>
       <!-- <div class="p-4 p-md-5 mb-4 mt-5 text-white rounded-bottom bg-seablue"> -->
-      <div class="p-4 p-md-5 mb-4 mt-7 rounded-bottom bg-light">
+      <div class="p-4 p-md-5 mb-4 mt-7 rounded-bottom bg-primary">
         <form class="form-horizontal" name="form1" method="post" action="作業記録.php">
           <div class="row mb-3 mt-2">
             <label for="inputname" class="col-sm-1 col-form-label">名前</label>
