@@ -132,26 +132,9 @@ session_start();
     $rs = $stmh->fetchall();
     $count = 0;
     ?>
-    <!-- <div class="ms-5 me-10"> -->
-    <!-- <div class="mx-5">
-        <div class="me-5">
-            <div class="me-5">
-                <div class="me-5">
-                    <div class="me-5">
-                        <div class="me-5">
-                            <div class="me-5">
-                                <div class="me-5">
-                                    <div class="me-5">
-                                        <div class="me-5">
-                                            <div class="me-5">
-                                                <div class="me-5">
-                                                    <div class="me-5">
-                                                        <div class="me-5">
-                                                            <div class="me-5">
-                                                                <div class="me-5">
-                                                                    <div class="me-5"> -->
+
     <div class="row">
-        <div class="col-2">
+        <div class="col-2 ms-5">
             <table class="table table-info table-striped">
                 <thead>
                     <tr>
@@ -189,26 +172,8 @@ session_start();
             </table>
         </div>
     </div>
-    <!-- </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
     <div class="ms-5">
-        <h4>作業中の人数：<?= $count ?>人</h4>
+        <h5>作業中の人数：<?= $count ?>人</h5>
     </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
