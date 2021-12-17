@@ -6,7 +6,8 @@ session_start();
 <head>
   <!-- Bootstrap CSS -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+  <link href="./assets/css/custom.css" rel="stylesheet">
 
   <title>作業記録管理ページ</title>
   <meta charset=utf-8>
@@ -73,7 +74,11 @@ session_start();
    <form name="form1" method="post" action="作業記録.php"> -->
 
     <div class="container-fluid">
-      <div class="p-4 p-md-5 mb-4 mt-5 text-white rounded-bottom bg-secondary">
+      <div class="p-4 p-md-5 mb-4 mt-5 rounded-top bg-blue">
+        <div class="col-auto">検索フォーム</div>
+      </div>
+      <!-- <div class="p-4 p-md-5 mb-4 mt-5 text-white rounded-bottom bg-seablue"> -->
+      <div class="p-4 p-md-5 mb-4 mt-7 rounded-bottom bg-seablue">
         <form class="form-horizontal" name="form1" method="post" action="作業記録.php">
           <div class="row mb-3 mt-2">
             <label for="inputname" class="col-sm-1 col-form-label">名前</label>
@@ -148,54 +153,6 @@ session_start();
     </div>
 
 
-    <!-- <font size="4" color="#000000">名前で検索:</font><br>
-        <input type="text" name="search_key" value="<?php echo $set_name; ?>"><br> 
-        
-        <font size="4" color="#000000">作業内容を指定:</font><br>
-        <select name="work">
-           <option value="<?php echo $set_work; ?>" selected><?php echo $set_work; ?></option>
-            <option value="">指定なし</option>
-            <option value="収穫">収穫</option>
-            <option value="芽かき">芽かき</option>
-            <option value="追い巻き">追い巻き</option>
-        </select>
-        <br>      
-
-        <font size="4" color="#000000">日付で検索:</font><br>
-        <select name="year">
-            <option value="<?php echo $set_year; ?>" selected><?php echo $set_year; ?></option>
-            <option value="">指定なし</option>
-            <?php
-            for ($i = 2021; $i <= 2035; $i++) {
-              echo "<option value='{$i}'>{$i}</option>";
-            }
-            ?>
-        </select>
-        年
-        <select name="month">
-            <option value="<?php echo $set_month; ?>" selected><?php echo $set_month; ?></option>
-            <option value="">指定なし</option>
-            <?php
-            for ($i = 1; $i <= 12; $i++) {
-              echo "<option value='{$i}'>{$i}</option>";
-            }
-            ?>
-        </select>
-        月
-        <select name="day">
-            <option value="<?php echo $set_day; ?>" selected><?php echo $set_day; ?></option>
-            <option value="">指定なし</option>
-            <?php
-            for ($i = 1; $i <= 31; $i++) {
-              echo "<option value='{$i}'>{$i}</option>";
-            }
-            ?>
-        </select>
-        日     
-        <br>
-        <input type="hidden" name="pass" value="<?= $_SESSION["pass"] ?>">
-        <input type="submit" value="検索">
-</form> -->
 
     <?php
     /*▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
