@@ -94,7 +94,13 @@ session_start();
 
     <br><br>
     <hr size="4" noshade>
-    <h3>作業の状況</h3>
+    <div class="col-auto">
+        <div class="m-0 bd-highlight d-inline-block">.</div>
+    </div>
+
+    <div class="col-auto">
+        <h3>作業の状況</h3>
+    </div>
     <hr size="4" noshade>
 
     <?php
