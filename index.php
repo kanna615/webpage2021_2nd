@@ -150,7 +150,7 @@ session_start();
                                                             <div class="me-5">
                                                                 <div class="me-5">
                                                                     <div class="me-5">
-                                                                        <table class="table table-striped">
+                                                                        <table class="table table-info table-striped">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <td align='center'>名前</td>
