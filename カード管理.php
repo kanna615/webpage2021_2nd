@@ -96,7 +96,7 @@ session_start();
                     <table class="table table-bordered border-dark">
                         <thead>
                             <tr class="table-light border-dark">
-                                <th>カードID</th>
+                                <th><h4>カードID</h></th>
                                 <th>姓</th>
                                 <th>名</th>
                                 <th>作業内容</th>
