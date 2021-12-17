@@ -133,7 +133,7 @@ session_start();
     $count = 0;
     ?>
     <!-- <div class="ms-5 me-10"> -->
-    <div class="mx-5">
+    <!-- <div class="mx-5">
         <div class="me-5">
             <div class="me-5">
                 <div class="me-5">
@@ -149,43 +149,47 @@ session_start();
                                                         <div class="me-5">
                                                             <div class="me-5">
                                                                 <div class="me-5">
-                                                                    <div class="me-5">
-                                                                        <table class="table table-info table-striped">
-                                                                            <thead>
-                                                                                <tr>
-                                                                                    <td align='center'>名前</td>
-                                                                                    <td align='center'>レーン</td>
-                                                                                    <td align='center'>作業内容</td>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
+                                                                    <div class="me-5"> -->
+    <div class="row">
+        <div class="col-2">
+            <table class="table table-info table-striped">
+                <thead>
+                    <tr>
+                        <td align='center'>名前</td>
+                        <td align='center'>レーン</td>
+                        <td align='center'>作業内容</td>
+                    </tr>
+                </thead>
+                <tbody>
 
 
 
-                                                                                <?php
-                                                                                foreach ($rs as $row) {
-                                                                                    if ($row['rane'] != "0") {
-                                                                                ?>
+                    <?php
+                    foreach ($rs as $row) {
+                        if ($row['rane'] != "0") {
+                    ?>
 
-                                                                                        <!-- <h3><?= $row['last_name'] ?>:　<font color="#ff0000"><?= $row['rane'] ?></font>レーン [<?= $row['work'] ?>]</h3> -->
-
-
-                                                                                        <tr>
-                                                                                            <td align='center'><?= $row['last_name'] ?></td>
-                                                                                            <td align='center'><?= $row['rane'] ?></td>
-                                                                                            <td align='center'><?= $row['work'] ?></td>
-                                                                                        </tr>
+                            <!-- <h3><?= $row['last_name'] ?>:　<font color="#ff0000"><?= $row['rane'] ?></font>レーン [<?= $row['work'] ?>]</h3> -->
 
 
-                                                                                <?php
-                                                                                        $count += 1;
-                                                                                    }
-                                                                                }
-                                                                                ?>
+                            <tr>
+                                <td align='center'><?= $row['last_name'] ?></td>
+                                <td align='center'><?= $row['rane'] ?></td>
+                                <td align='center'><?= $row['work'] ?></td>
+                            </tr>
 
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </div>
+
+                    <?php
+                            $count += 1;
+                        }
+                    }
+                    ?>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -201,7 +205,7 @@ session_start();
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="ms-5">
         <h4>作業中の人数：<?= $count ?>人</h4>
