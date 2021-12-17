@@ -96,18 +96,10 @@ session_start();
                     <table class="table table-bordered border-dark">
                         <thead>
                             <tr class="table-light border-dark">
-                                <th>
-                                    <h6>カードID</h>
-                                </th>
-                                <th>
-                                    <h6>姓</h>
-                                </th>
-                                <th>
-                                    <h6>名</h>
-                                </th>
-                                <th>
-                                    <h6>作業内容</h>
-                                </th>
+                                <th>カードID</th>
+                                <th>姓</th>
+                                <th>名</th>
+                                <th>作業内容</th>
                                 <th></th>
                             </tr>
                         </thead>
