@@ -95,7 +95,7 @@ session_start();
     <br><br>
     <hr size="4" noshade>
     <div class="col-auto">
-        <div class="m-0 bd-highlight d-inline-block">.</div>
+        <div class="m-0 bd-info d-inline-block">.</div>
     </div>
 
     <div class="col-auto">
