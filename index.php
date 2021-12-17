@@ -141,30 +141,34 @@ session_start();
                     <td align='center'>作業内容</td>
                 </tr>
             </thead>
-        </table>
-    </div>
+            <tbody>
 
-    <?php
-    foreach ($rs as $row) {
-        if ($row['rane'] != "0") {
-    ?>
-            <div class="ms-5 px-20">
-                <!-- <h3><?= $row['last_name'] ?>:　<font color="#ff0000"><?= $row['rane'] ?></font>レーン [<?= $row['work'] ?>]</h3> -->
-                <table class="table table-success table-striped">
-                    <tbody>
+
+
+                <?php
+                foreach ($rs as $row) {
+                    if ($row['rane'] != "0") {
+                ?>
+
+                        <!-- <h3><?= $row['last_name'] ?>:　<font color="#ff0000"><?= $row['rane'] ?></font>レーン [<?= $row['work'] ?>]</h3> -->
+
+
                         <tr>
                             <td align='center'><?= $row['last_name'] ?></td>
                             <td align='center'><?= $row['rane'] ?></td>
                             <td align='center'><?= $row['work'] ?></td>
                         </tr>
-                    </tbody>
-                </table>
-            </div>
-    <?php
-            $count += 1;
-        }
-    }
-    ?>
+
+
+                <?php
+                        $count += 1;
+                    }
+                }
+                ?>
+                
+            </tbody>
+        </table>
+    </div>
 
     <div class="container-fluid">
         <h4>作業中の人数：<?= $count ?>人</h4>
