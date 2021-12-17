@@ -94,12 +94,14 @@ session_start();
 
     <br><br>
     <hr size="4" noshade>
-    <div class="col-auto">
-        <div class="p-1 p-md-1 mb-1 bg-primary">.</div>
-    </div>
+    <div class="row">
+        <div class="col-auto">
+            <div class="p-1 p-md-1 m-1 bg-primary">.</div>
+        </div>
 
-    <div class="col-auto">
-        <h3>作業の状況</h3>
+        <div class="col-auto">
+            <h3>作業の状況</h3>
+        </div>
     </div>
     <hr size="4" noshade>
 
