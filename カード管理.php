@@ -92,7 +92,7 @@ session_start();
             }
         ?>
             <div class="row justify-content-md-center">
-                <div class="col-10 m-5">
+                <div class="col-10 mx-5 my-3">
                     <table class="table table-bordered border-dark">
                         <thead>
                             <tr class="table-light border-dark">
