@@ -54,7 +54,7 @@ session_start();
 
         <br>
         <hr size="4" noshade>
-        <h4>管理ページリンク</h4>
+        <h3>管理ページリンク</h3>
         <hr size="4" noshade>
 
         <div class="container-fluid">
@@ -77,7 +77,7 @@ session_start();
     ?>
         <br>
         <hr size="4" noshade>
-        <h4>管理ページリンク</h4>
+        <h3>管理ページリンク</h3>
         <hr size="4" noshade>
 
         <div class="container-fluid">
@@ -94,7 +94,7 @@ session_start();
 
     <br><br>
     <hr size="4" noshade>
-    <h1>作業の状況</h1>
+    <h3>作業の状況</h3>
     <hr size="4" noshade>
 
     <?php
