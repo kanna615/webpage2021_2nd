@@ -74,7 +74,7 @@ session_start();
    <form name="form1" method="post" action="作業記録.php"> -->
 
     <div class="container-fluid">
-      <div class="p-3 p-md-3 mt-5 rounded-top bg-secondary">
+      <div class="p-3 p-md-3 mt-5 rounded-top bg-purple">
         <div class="col-auto">検索フォーム</div>
       </div>
       <!-- <div class="p-4 p-md-5 mb-4 mt-5 text-white rounded-bottom bg-seablue"> -->
@@ -103,7 +103,7 @@ session_start();
           <div class="row mb-3 mt-3">
             <label for="inputsagyo" class="col-sm-1 control-label">日付</label>
             <div class="col-auto">
-              <select class="form-select" 　name="year">
+              <select class="form-select" name="year">
                 <option value="<?php echo $set_year; ?>" selected><?php echo $set_year; ?></option>
                 <option value="">指定なし</option>
                 <?php
