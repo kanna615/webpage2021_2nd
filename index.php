@@ -132,7 +132,8 @@ session_start();
     $rs = $stmh->fetchall();
     $count = 0;
     ?>
-    <div class="ms-5 me-10">
+    <!-- <div class="ms-5 me-10"> -->
+    <div class="mx-10">
         <table class="table table-success table-striped">
             <thead>
                 <tr>
@@ -170,7 +171,7 @@ session_start();
         </table>
     </div>
 
-    <div class="container-fluid">
+    <div class="ms-5">
         <h4>作業中の人数：<?= $count ?>人</h4>
     </div>
 
