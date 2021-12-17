@@ -133,7 +133,7 @@ session_start();
     $count = 0;
     ?>
     <!-- <div class="ms-5 me-10"> -->
-    <div class="mx-9">
+    <div class="mx-5">
         <table class="table table-success table-striped">
             <thead>
                 <tr>
