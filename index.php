@@ -132,7 +132,7 @@ session_start();
     $rs = $stmh->fetchall();
     $count = 0;
     ?>
-    <div class="ms-5 px-5">
+    <div class="ms-5 px-1">
         <table class="table table-success table-striped">
             <thead>
                 <tr>
