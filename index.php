@@ -98,7 +98,7 @@ session_start();
 
         <div class="container-fluid">
             <a href="ログイン画面_作業記録.html" class="link-dark">
-                <font size="5">作業記録管理ページ</font>
+                <h2>作業記録管理ページ</h>
             </a><br><br>
             <a href="ログイン画面_カード管理.html" class="link-dark">
                 <font size="5">カード管理ページ</font>
