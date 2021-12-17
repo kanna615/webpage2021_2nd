@@ -74,11 +74,11 @@ session_start();
    <form name="form1" method="post" action="作業記録.php"> -->
 
     <div class="container-fluid">
-      <div class="p-4 p-md-5 mb-4 mt-5 rounded-top bg-blue">
+      <div class="p-2 p-md-2 mb-2 mt-5 rounded-top bg-secondary">
         <div class="col-auto">検索フォーム</div>
       </div>
       <!-- <div class="p-4 p-md-5 mb-4 mt-5 text-white rounded-bottom bg-seablue"> -->
-      <div class="p-4 p-md-5 mb-4 mt-7 rounded-bottom bg-seablue">
+      <div class="p-4 p-md-5 mb-4 mt-7 rounded-bottom table-info">
         <form class="form-horizontal" name="form1" method="post" action="作業記録.php">
           <div class="row mb-3 mt-2">
             <label for="inputname" class="col-sm-1 col-form-label">名前</label>
