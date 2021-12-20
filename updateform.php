@@ -115,7 +115,7 @@ session_start();
 
                     <div class="row justify-content-md-center">
                         <div class="col-10 mx-5 my-3">
-                            <span class="border-top border-2"></span>
+                            <span class="border-top border-2"><input type="text" name="last_name" value="<?= htmlspecialchars($row['last_name']) ?>"></span>
                             <!-- <div class="d-flex justify-content-start mb-2">
                                 <div class="p-2 bd-highlight">Flex item</div>
                                 <input type="text" name="last_name" value="<?= htmlspecialchars($row['last_name']) ?>">
