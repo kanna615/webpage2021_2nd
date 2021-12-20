@@ -113,6 +113,20 @@ session_start();
                         </div>
                     </div>
 
+                    <div class="row justify-content-md-center">
+                        <div class="col-10 mx-5 my-3">
+                            <span class="border-top border-2"></span>
+                            <div class="d-flex justify-content-start mb-2">
+                                <div class="p-2 bd-highlight">Flex item</div>
+                                <input type="text" name="last_name" value="<?= htmlspecialchars($row['last_name']) ?>">
+                            </div>
+                            <span class="border-top"></span>
+                            <span class="border-top"></span>
+                            <span class="border-top"></span>
+                            <span class="border-top"></span>
+                        </div>
+                    </div>
+
             <?php
                 }
             } //foreachの括弧
