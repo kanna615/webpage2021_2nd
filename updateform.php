@@ -103,7 +103,9 @@ session_start();
                                         <input type="hidden" name="card_id" value="<?= $row['card_id'] ?>">
                                         <input type="hidden" name="action" value="update">
                                         <div class="row mt-3">
-                                            <input type="submit" value="更新">
+                                            <div class="col-sm-offset-2 col-sm-10">
+                                                <input type="submit" value="更新">
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
