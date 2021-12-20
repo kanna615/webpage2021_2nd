@@ -86,22 +86,26 @@ session_start();
                 if ($row['card_id'] == $_GET['id']) {
         ?>
 
-                    <div class="card">
-                        <div class="card-header">
-                            作業記録書き換えフォーム
-                        </div>
-                        <div class="card-body">
-                            <font size="3" color="#000000">カードID：</font>
-                            <font size="4" color="#ff0000"><?= htmlspecialchars($row['card_id']) ?></font>
-                            <br>
-                            <form name="form3" method="post" action="uptab.php">
-                                姓　　　： <input type="text" name="last_name" value="<?= htmlspecialchars($row['last_name']) ?>"><br>
-                                名　　　： <input type="text" name="first_name" value="<?= htmlspecialchars($row['first_name']) ?>"><br>
-                                作業内容： <input type="text" name="work" value="<?= htmlspecialchars($row['work']) ?>"><br>
-                                <input type="hidden" name="card_id" value="<?= $row['card_id'] ?>">
-                                <input type="hidden" name="action" value="update">
-                                <input type="submit" value="更新">
-                            </form>
+                    <div class="row justify-content-md-center">
+                        <div class="col-10 mx-5 my-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    作業記録書き換えフォーム
+                                </div>
+                                <div class="card-body">
+                                    <font size="3" color="#000000">カードID：</font>
+                                    <font size="4" color="#ff0000"><?= htmlspecialchars($row['card_id']) ?></font>
+                                    <br>
+                                    <form name="form3" method="post" action="uptab.php">
+                                        姓　　　： <input type="text" name="last_name" value="<?= htmlspecialchars($row['last_name']) ?>"><br>
+                                        名　　　： <input type="text" name="first_name" value="<?= htmlspecialchars($row['first_name']) ?>"><br>
+                                        作業内容： <input type="text" name="work" value="<?= htmlspecialchars($row['work']) ?>"><br>
+                                        <input type="hidden" name="card_id" value="<?= $row['card_id'] ?>">
+                                        <input type="hidden" name="action" value="update">
+                                        <input type="submit" value="更新">
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
