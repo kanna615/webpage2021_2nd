@@ -102,7 +102,9 @@ session_start();
                                         作業内容： <input type="text" name="work" value="<?= htmlspecialchars($row['work']) ?>"><br>
                                         <input type="hidden" name="card_id" value="<?= $row['card_id'] ?>">
                                         <input type="hidden" name="action" value="update">
-                                        <input type="submit" value="更新">
+                                        <div class="row mt-3">
+                                            <input type="submit" value="更新">
+                                        </div>
                                     </form>
                                 </div>
                             </div>
