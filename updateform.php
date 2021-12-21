@@ -111,8 +111,8 @@ session_start();
                                 </div>
                                 <div class="card-footer text-muted">
                                     <!-- <div class="row mt-3"> -->
-                                    <div class="col-sm-offset-2 col-sm-10">
-                                        <input class="bg-primary" type="submit" value="更新">
+                                    <div class="col-sm-offset-3 col-sm-10">
+                                        <input class="bg-info" type="submit" value="更新">
                                     </div>
                                     <!-- </div> -->
                                 </div>
