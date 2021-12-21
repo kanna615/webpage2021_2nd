@@ -109,38 +109,44 @@ session_start();
                                         </div>
                                     </form>
                                 </div>
+                                <div class="card-footer text-muted">
+                                    <div class="row mt-3">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <input type="submit" value="更新">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row justify-content-md-center">
-                        <div class="col-10 mx-5 my-3">
-                            <span class="border-top border-2"><input type="text" name="last_name" value="<?= htmlspecialchars($row['last_name']) ?>"></span>
-                            <!-- <div class="d-flex justify-content-start mb-2">
+                        <div class="row justify-content-md-center">
+                            <div class="col-10 mx-5 my-3">
+                                <span class="border-top border-2"><input type="text" name="last_name" value="<?= htmlspecialchars($row['last_name']) ?>"></span>
+                                <!-- <div class="d-flex justify-content-start mb-2">
                                 <div class="p-2 bd-highlight">Flex item</div>
                                 <input type="text" name="last_name" value="<?= htmlspecialchars($row['last_name']) ?>">
                             </div> -->
-                            <span class="border-top"></span>
-                            <span class="border-top"></span>
-                            <span class="border-top"></span>
-                            <span class="border-top"></span>
+                                <span class="border-top"></span>
+                                <span class="border-top"></span>
+                                <span class="border-top"></span>
+                                <span class="border-top"></span>
+                            </div>
                         </div>
-                    </div>
 
-            <?php
+                <?php
                 }
             } //foreachの括弧
 
-            ?>
+                ?>
 
 
 
-    <?php
+        <?php
         }
     }
-    ?>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        ?>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 
